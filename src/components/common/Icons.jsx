@@ -15,7 +15,7 @@ const Icon = (props) => {
                     </linearGradient>
                 </defs>
             </svg>
-        )
+        ),
     }
     return (
         <span className={`flex ${props.className}`}>

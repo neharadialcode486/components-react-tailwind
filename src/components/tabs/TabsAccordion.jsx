@@ -1,40 +1,11 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { useParams } from 'react-router-dom';  
-import women from "../../assets/images/webp/women-img.png";
-import { ACCORDION_DATA } from "../../utils/Helper";
+import { useParams } from 'react-router-dom';
+import { TABS_DATA } from "../../utils/Helper";
 import Icon from '../common/Icons';
 
-const TABS_DATA = [
-    {
-        title: "néophyte",
-        image: women,
-        accordionContent: ACCORDION_DATA,
-    },
-    {
-        title: "rentable",
-        image: women,
-        accordionContent: ACCORDION_DATA,
-    },
-    {
-        title: "expérimenté",
-        image: women,
-        accordionContent: ACCORDION_DATA,
-    },
-    {
-        title: "Malin",
-        image: women,
-        accordionContent: ACCORDION_DATA,
-    },
-    {
-        title: "Indépendant",
-        image: women,
-        accordionContent: ACCORDION_DATA,
-    },
-];
-
 const TabsAccordion = () => {
-    const { tabName } = useParams(); 
-    const [activeTab, setActiveTab] = useState(0); 
+    const { tabName } = useParams();
+    const [activeTab, setActiveTab] = useState(0);
     const [openIndex, setOpenIndex] = useState(null);
     const contentRefs = useRef([]);
 
@@ -43,7 +14,7 @@ const TabsAccordion = () => {
         if (tabIndex !== -1) {
             setActiveTab(tabIndex);
         } else {
-            setActiveTab(0); 
+            setActiveTab(0);
         }
     }, [tabName]);
     useEffect(() => {
@@ -69,13 +40,13 @@ const TabsAccordion = () => {
                     <div className="max-w-[779px] relative z-10 w-full mx-auto flex md:justify-center items-center gap-4">
                         {TABS_DATA.map((tab, idx) => (
                             <a
-                                href={`/${tab.title.toLowerCase()}`} 
+                                href={`/${tab.title.toLowerCase()}`}
                                 key={idx}
                                 className={`px-6 py-[18px] font-bold text-lg relative after:[''] after:rounded-lg rounded-lg after:absolute after:h-[103%] after:w-[102%] after:-left-px after:-top-px after:-z-10 ${activeTab === idx ? "after:bg-linear-green bg-deep-gray" : "after:bg-transparent"}`}
                                 onClick={(e) => {
-                                    e.preventDefault(); 
-                                    setActiveTab(idx); 
-                                    window.history.pushState(null, '', `/${tab.title.toLowerCase()}`); 
+                                    e.preventDefault();
+                                    setActiveTab(idx);
+                                    window.history.pushState(null, '', `/${tab.title.toLowerCase()}`);
                                 }}
                             >
                                 <span className={activeTab === idx ? "text-transparent bg-linear-green bg-clip-text font-inter" : "text-white font-inter"}>
@@ -108,7 +79,7 @@ const TabsAccordion = () => {
                                             }}
                                         >
                                             <h3 className="font-medium text-off-white font-inter text-base sm:text-lg" >
-                                                <span className='font-inter font-normal'>{index + 1} .</span>{item.title}
+                                                {item.title}
                                             </h3>
                                             <div className={`${openIndex === index ? 'rotate-180' : ''} w-3 sm:w-5 duration-300 ease-linear`}>
                                                 <Icon iconName='plusIcon' />
