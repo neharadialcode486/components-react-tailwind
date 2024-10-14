@@ -5,6 +5,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        'linear-green': "linear-gradient(81.75deg, #18FF9E 0%, #1EA56C 126.43%)",
+      },
       fontFamily: {
         'lato': "'Lato', sans-serif",
         'inter': "'Inter', sans-serif",
@@ -14,7 +17,7 @@ module.exports = {
         padding: "20px",
       },
       colors: {
-        'deep-blue': "#3C278D",
+        'deep-gray': "#151619",
       }
     },
   },
