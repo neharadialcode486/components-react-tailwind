@@ -1,10 +1,10 @@
 import './App.css';
-import TabsAccordion from './components/tabs/TabsAccordion';
+import CounterClients from './components/counter/CounterClients';
 
 function App() {
   return (
     <>
-      <TabsAccordion />
+      <CounterClients />
     </>
   );
 }
