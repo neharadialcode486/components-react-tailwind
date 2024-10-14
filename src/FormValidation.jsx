@@ -1,21 +1,95 @@
-import React from "react";
+import React, { useState } from "react";
 
 const FormValidation = () => {
+  const initialState = {
+    name: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+    phoneNumber: "",
+    selectedColor: "",
+  };
+  const [formData, setFormData] = useState(initialState);
+  const [error, setError] = useState(false);
+  const onsubmitHandler = (e) => {
+    e.preventDefault();
+    setError(true);
+    if (
+      formData.name &&
+      formData.email &&
+      formData.password &&
+      formData.confirmPassword &&
+      formData.password === formData.confirmPassword &&
+      formData.phoneNumber &&
+      formData.selectedColor
+    ) {
+      console.log(formData, "E");
+      setFormData(initialState);
+      setError(false);
+    }
+  };
   return (
     <>
       <form
+        onSubmit={onsubmitHandler}
         action=""
         className="max-w-[700px] mx-auto h-screen flex flex-col justify-center items-center"
       >
-        <input type="text" placeholder="Name" />
-        <input type="text" placeholder="Email" />
-        <input type="text" placeholder="Password" />
-        <input type="text" placeholder="Confirm Password" />
-        <input type="text" placeholder="Phone Number" />
-        <select name="" id="">
-          <option value="" selected disabled>
-            Select color
-          </option>
+        <input
+          onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+          type="text"
+          placeholder="Name"
+          value={formData.name}
+        />
+        {error && formData.name === "" && <p>This field is required.</p>}
+        <input
+          onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+          type="text"
+          placeholder="Email"
+          value={formData.email}
+        />
+        {error && formData.email === "" && <p>This field is required.</p>}
+        <input
+          onChange={(e) =>
+            setFormData({ ...formData, password: e.target.value })
+          }
+          type="text"
+          placeholder="Password"
+          value={formData.password}
+        />
+        {error && formData.password === "" && <p>This field is required.</p>}
+        <input
+          onChange={(e) =>
+            setFormData({ ...formData, confirmPassword: e.target.value })
+          }
+          type="text"
+          placeholder="Confirm Password"
+          value={formData.confirmPassword}
+        />
+        {error && formData.confirmPassword === "" ? (
+          <p>This field is required.</p>
+        ) : (
+          error &&
+          formData.confirmPassword !== formData.password &&
+          "Password not matched"
+        )}
+        <input
+          onChange={(e) =>
+            setFormData({ ...formData, phoneNumber: e.target.value })
+          }
+          type="number"
+          placeholder="Phone Number"
+          value={formData.phoneNumber}
+        />
+        <select
+          onChange={(e) =>
+            setFormData({ ...formData, selectedColor: e.target.value })
+          }
+          name=""
+          id=""
+          value={formData.selectedColor}
+        >
+          <option defaultValue="Select color">Select color</option>
           <option value="Red">Red</option>
           <option value="Blue">Blue</option>
           <option value="Black">Black</option>
