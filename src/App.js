@@ -1,12 +1,10 @@
 import './App.css';
-import Faq from './components/accordion/Faq';
-import FaqImage from './components/accordion/FaqImage';
+import TabsAccordion from './components/tabs/TabsAccordion';
 
 function App() {
   return (
     <>
-      <Faq />
-      <FaqImage />
+      <TabsAccordion />
     </>
   );
 }
