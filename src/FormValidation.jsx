@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const FormValidation = () => {
   const initialState = {
@@ -8,6 +8,7 @@ const FormValidation = () => {
     confirmPassword: "",
     phoneNumber: "",
     selectedColor: "",
+    image: "",
   };
   const [formData, setFormData] = useState(initialState);
   const [error, setError] = useState(false);
@@ -28,6 +29,18 @@ const FormValidation = () => {
       setError(false);
     }
   };
+  useEffect(() => {
+    if (formData.image instanceof File) {
+      const reader = new FileReader();
+      reader.onloadend = () => {
+        setFormData((prevFormData) => ({
+          ...prevFormData,
+          image: reader.result,
+        }));
+      };
+      reader.readAsDataURL(formData.image);
+    }
+  }, [formData.image]);
   return (
     <>
       <form
@@ -81,6 +94,20 @@ const FormValidation = () => {
           placeholder="Phone Number"
           value={formData.phoneNumber}
         />
+        <input
+          type="file"
+          onChange={(e) =>
+            setFormData({ ...formData, image: e.target.files[0] })
+          }
+        />
+        {formData.image && (
+          <img
+            className="w-full h-[50px] object-cover"
+            src={formData.image}
+            alt="image"
+          />
+        )}
+
         <select
           onChange={(e) =>
             setFormData({ ...formData, selectedColor: e.target.value })
