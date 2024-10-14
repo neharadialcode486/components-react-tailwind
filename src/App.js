@@ -1,5 +1,5 @@
 import './App.css';
-import Faq from './components/home/Faq';
+import Faq from './components/accordion/Faq';
 
 function App() {
   return (
