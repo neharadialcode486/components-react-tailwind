@@ -18,6 +18,10 @@ module.exports = {
       },
       colors: {
         'deep-gray': "#151619",
+        'light-gray': "#272834",
+        'dark-gray': "#BEC4D0",
+        'off-white': "#E2E7F0",
+        'off-green': "#18F699",
       }
     },
   },
