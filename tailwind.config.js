@@ -26,6 +26,7 @@ module.exports = {
         // 'lighter-orange': "#FF8C0033",
         // 'off-pink': "#FFDEDD",
         // 'off-red': "#DA6015",
+        'off-yellow': "#FFED00",
       }
     },
   },
