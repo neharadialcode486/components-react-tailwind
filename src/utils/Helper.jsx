@@ -14,6 +14,15 @@ export const ACCORDION_DATA = [
     },
     { title: "En savoir plus", content: "Dans ce module dédié aux débutants, on passe en revue les principes de bases de ce marché avec de nombreuses vidéos" },
 ]
+export const ACCORDION_DATA2 = [
+    {
+        title: "En savoir", content: "Dans ce module dédié aux débutants, on passe en revue les principes de bases de ce marché avec de nombreuses vidéos sur le bitcoin, les stratégies d'investissement les plus efficaces et la psychologie à adopter pour réussir.L'objectif est d'Acquérir les bases pour bien débuter en Investissement !"
+    },
+    { title: "En savoir plus", content: "Dans ce module dédié aux débutants, on passe en revue les principes de bases de ce marché avec de nombreuses vidéos" },
+    {
+        title: "En savoir", content: "Dans ce module dédié aux débutants, on passe en revue les principes de bases de ce marché avec de nombreuses vidéos sur le bitcoin, les stratégies d'investissement les plus efficaces et la psychologie à adopter pour réussir.L'objectif est d'Acquérir les bases pour bien débuter en Investissement !"
+    },
+]
 export const TABS_DATA = [
     {
         title: "néophyte",
@@ -22,22 +31,22 @@ export const TABS_DATA = [
     },
     {
         title: "rentable",
-        image: women,
-        accordionContent: ACCORDION_DATA,
+        image: swiper,
+        accordionContent: ACCORDION_DATA2,
     },
     {
         title: "expérimenté",
-        image: women,
+        image: swiper1,
         accordionContent: ACCORDION_DATA,
     },
     {
         title: "Malin",
-        image: women,
-        accordionContent: ACCORDION_DATA,
+        image: swiper3,
+        accordionContent: ACCORDION_DATA2,
     },
     {
         title: "Indépendant",
-        image: women,
+        image: swiper5,
         accordionContent: ACCORDION_DATA,
     },
 ];

@@ -4,3 +4,20 @@
 * {
     font-family: 'Inter', sans-serif;
 }
+
+.swiper-pagination-bullet {
+    opacity: 1;
+    width: 26px;
+    height: 10px;
+    border: 1px solid #DA6015;
+    background-color: transparent;
+    border-radius: 91px;
+}
+
+.swiper-pagination-bullet-active {
+    background-color: #DA6015;
+}
+
+.swiper-pagination {
+    bottom: 0px !important;
+}

@@ -33,8 +33,8 @@ const TabsAccordion = () => {
         <div className='bg-black md:py-16 sm:py-14 py-10'>
             <div className="container my-2.5">
                 <div className="w-fit mx-auto bg-linear-green p-px rounded-full"><p className='text-white py-3 px-4 font-medium rounded-full font-inter text-sm bg-deep-gray'>Nos formations</p></div>
-                <div className="overflow-x-scroll md:overflow-x-visible w-full mt-5 p-2">
-                    <div className="max-w-[779px] relative z-10 w-full mx-auto flex md:justify-center items-center gap-4">
+                <div className="overflow-x-scroll lg:overflow-x-visible w-full mt-5 p-2">
+                    <div className="min-w-[779px] relative z-10 w-fit mx-auto flex lg:justify-center items-center gap-4">
                         {TABS_DATA.map((tab, idx) => (
                             <a href={`/${tab.title.toLowerCase()}`} key={idx}
                                 className={`px-6 py-[18px] font-bold text-lg relative after:[''] after:rounded-lg rounded-lg after:absolute after:h-[103%] after:w-[102%] after:-left-px after:-top-px after:-z-10 ${activeTab === idx ? "after:bg-linear-green bg-deep-gray" : "after:bg-transparent"}`}
@@ -48,9 +48,9 @@ const TabsAccordion = () => {
                         ))}
                     </div>
                 </div>
-                <div className={`mt-10 flex lg:flex-row items-center lg:items-start justify-center gap-4`}>
+                <div className={`mt-10 flex flex-col lg:flex-row items-center lg:items-start justify-center gap-4`}>
                     <div className="max-w-[500px]">
-                        <img src={TABS_DATA[activeTab].image} alt={TABS_DATA[activeTab].title} className='w-full' />
+                        <img src={TABS_DATA[activeTab].image} alt={TABS_DATA[activeTab].title} className='w-full rounded-2xl' />
                     </div>
                     <div className="max-w-[764px] w-full sm:p-8">
                         <h2 className='font-bold text-3xl text-center lg:text-left text-white'>Investisseur {TABS_DATA[activeTab].title}</h2>
