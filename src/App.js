@@ -1,10 +1,10 @@
-import CountDown from './components/countDown/CountDown';
+import SideBar from './components/sidebar/SideBar';
 import './App.css';
 
 function App() {
   return (
     <>
-      <CountDown />
+      <SideBar />
     </>
   );
 }
