@@ -27,6 +27,7 @@ module.exports = {
         // 'off-pink': "#FFDEDD",
         // 'off-red': "#DA6015",
         'off-yellow': "#FFED00",
+        'dark-gray': "#EAE9E3",
       }
     },
   },
