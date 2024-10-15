@@ -15,8 +15,11 @@ module.exports = {
           'xl': "1180px",
         }
       },
+      backgroundImage: {
+        'line': "url('./assets/images/webp/roadmap-line.webp')",
+      },
     },
-  },
-  plugins: [],
+    plugins: [],
+  }
 }
 

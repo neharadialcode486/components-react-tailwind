@@ -1,15 +1,11 @@
 
 import './App.css';
-import HeaderFirst from './components/HeaderFirst';
-import HeaderSecond from './components/HeaderSecond';
-import HeaderThird from './components/HeaderThird';
+import RoadMapFirst from './components/RoadMapFirst';
 
 function App() {
   return (
     <>
-      <HeaderFirst />
-      <HeaderSecond />
-      <HeaderThird/>
+      <RoadMapFirst/>
     </>
   );
 }
