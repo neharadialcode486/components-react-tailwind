@@ -3,7 +3,6 @@ import navLogo from '../../assets/images/webp/nav-logo.webp';
 
 const HeaderSecond = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
     const toggleMenu = () => {
         setIsMenuOpen(prevState => !prevState);
     };

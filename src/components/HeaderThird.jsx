@@ -4,7 +4,6 @@ import { NAV_ITEMS } from '../../utils/Helper';
 
 const HeaderThird = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
     const toggleMenu = () => {
         setIsMenuOpen(prevState => !prevState);
     };
@@ -56,8 +55,7 @@ const HeaderThird = () => {
                                         target="_blank"
                                         rel="noopener noreferrer"
                                         className="font-inter font-normal text-base text-black relative after:absolute hover:after:bg-black hover:after:left-0 after:w-0 hover:after:w-full hover:after:h-[2px] after:left-0 hover:after:bottom-[-2px] after:ease-in-out after:duration-300"
-                                        href={tab.href}
-                                    >
+                                        href={tab.href}>
                                         {tab.text}
                                     </a>
                                 </li>
