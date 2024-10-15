@@ -14,6 +14,22 @@ export default function SimpleSlider() {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
   };
 
   const handleNext = () => {
@@ -25,8 +41,8 @@ export default function SimpleSlider() {
   };
 
   return (
-    <section className="flex items-center min-h-screen">
-      <div className="px-3 mx-auto max-w-6xl relative">
+    <section className="flex items-center pt-8">
+      <div className="px-3 mx-auto max-w-7xl w-full">
           <h2 className="text-5xl text-center leading-[56px] ff-playfair">
             New <span className="font-bold">Arrivals</span>
           </h2>
@@ -37,12 +53,13 @@ export default function SimpleSlider() {
           in traditional Moroccan craftsmanship and contemporary design.
         </p>
 
-        <div className="relative">
+        <div className="relative w-full">
+          <div className="max-w-6xl mx-auto">
           <Slider ref={sliderRef} {...settings}>
             {/* Slide Items */}
             <div>
-              <div className="max-w-[364px]">
-                <img src={img1} alt="Elegant Djellaba" className="w-full" />
+              <div className="max-w-[364px] mx-auto">
+                <img src={img1} alt="Elegant Djellaba" className="w-full min-h-[391px]" />
                 <div className="flex items-center justify-between pt-2">
                   <p className="font-medium ff-lato text-xl leading-7">
                     Elegant Djellaba
@@ -54,8 +71,8 @@ export default function SimpleSlider() {
               </div>
             </div>
             <div>
-              <div className="max-w-[364px]">
-                <img src={img2} alt="Luxurious Caftan" className="w-full" />
+              <div className="max-w-[364px] mx-auto">
+                <img src={img2} alt="Luxurious Caftan" className="w-full min-h-[391px]" />
                 <div className="flex items-center justify-between pt-2">
                   <p className="font-medium ff-lato text-xl leading-7">
                     Luxurious Caftan
@@ -67,8 +84,8 @@ export default function SimpleSlider() {
               </div>
             </div>
             <div>
-              <div className="max-w-[364px]">
-                <img src={img3} alt="Classic Gandora" className="w-full" />
+              <div className="max-w-[364px] mx-auto">
+                <img src={img3} alt="Classic Gandora" className="w-full min-h-[391px]" />
                 <div className="flex items-center justify-between pt-2">
                   <p className="font-medium ff-lato text-xl leading-7">
                     Classic Gandora
@@ -79,11 +96,12 @@ export default function SimpleSlider() {
                 </div>
               </div>
             </div>
-          </Slider>
+            </Slider>
+            </div>
           <div className="flex space-x-4 absolute justify-between w-full top-44">
             <button
               onClick={handlePrev}
-              className="prev w-10 h-10 rounded-full border border-[#DA6015] flex items-center justify-center group/btn transition-all duration-200 hover:bg-[#DA6015] absolute -left-16"
+              className="prev w-10 h-10 rounded-full border border-[#DA6015] flex items-center justify-center group/btn transition-all duration-200 hover:bg-[#DA6015] absolute left-0"
             >
               <svg
                 width="11"
@@ -101,7 +119,7 @@ export default function SimpleSlider() {
             </button>
             <button
               onClick={handleNext}
-              className="next w-10 h-10 rounded-full border border-[#DA6015] flex items-center justify-center group/btn transition-all duration-200 hover:bg-[#DA6015] absolute -right-14"
+              className="next w-10 h-10 rounded-full border border-[#DA6015] flex items-center justify-center group/btn transition-all duration-200 hover:bg-[#DA6015] absolute right-0"
             >
               <svg
                 width="11"
