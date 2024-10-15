@@ -17,11 +17,11 @@ module.exports = {
         padding: "20px",
       },
       colors: {
-        'deep-gray': "#151619",
-        'light-gray': "#272834",
-        'dark-gray': "#BEC4D0",
-        'off-white': "#E2E7F0",
-        'off-green': "#18F699",
+        'off-blue': "#076787",
+        'light-blue': "#82B2C2",
+        'light-green': "#85B6A6",
+        'off-white': "#FFFFFF33",
+        'off-gray': "#AFCBD521",
       }
     },
   },
