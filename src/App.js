@@ -1,12 +1,10 @@
-import CounterClients from './components/counter/CounterClients';
-import CounterPlatform from './components/counter/CounterPlatform';
+import CountDown from './components/countDown/CountDown';
 import './App.css';
 
 function App() {
   return (
     <>
-      <CounterClients />
-      <CounterPlatform />
+      <CountDown />
     </>
   );
 }
