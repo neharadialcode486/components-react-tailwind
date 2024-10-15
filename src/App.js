@@ -1,8 +1,8 @@
 
 import './App.css';
-import HeaderFirst from './components/common/HeaderFirst';
-import HeaderSecond from './components/common/HeaderSecond';
-import HeaderThird from './components/common/HeaderThird';
+import HeaderFirst from './components/HeaderFirst';
+import HeaderSecond from './components/HeaderSecond';
+import HeaderThird from './components/HeaderThird';
 
 function App() {
   return (
