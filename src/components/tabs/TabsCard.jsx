@@ -2,9 +2,9 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useParams } from 'react-router-dom';
 import { TABS_SWIPER } from "../../utils/Helper";
 import { Swiper, SwiperSlide } from 'swiper/react';
-import { Pagination } from 'swiper/modules';  
+import { Pagination } from 'swiper/modules';
 import 'swiper/css';
-import 'swiper/css/pagination';  
+import 'swiper/css/pagination';
 
 const TabsCard = () => {
     const { tabName } = useParams();
