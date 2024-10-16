@@ -1,24 +1,24 @@
 import React from 'react'
-import roadMapImg from '../assets/images/webp/roadmap-line-image.webp'
 import menImg from '../assets/images/webp/men-image.webp'
 import rightEllipse from '../assets/images/webp/right-ellips.webp'
 import leftEllipse from '../assets/images/webp/left-ellipse.webp'
 import handUp from '../assets/images/svg/hand-up.svg'
 import stoneImg from '../assets/images/webp/stone-image.webp'
+import rocketImg from '../assets/images/webp/rocket-image.webp'
 
 const RoadMapThird = () => {
   return (
     <div className='bg-black lg:pt-32 md:pt-20 lg:pb-36 md:pb-28 sm:pb-20 pb-16 xl:pb-[162px] sm:pt-16 pt-10 xl:pt-40 relative'>
       <img src={menImg} className='absolute  z-[1] xl:max-w-[184px] md:max-w-[130px] max-w-[80px] w-full right-[30px] top-[318px] sm:block hidden' alt="men-image" />
-      <img src={leftEllipse} className='absolute left bottom-0 max-w-[550px]' alt="left-ellipse" />
-      <img src={stoneImg} className='absolute left-0 bottom-[160px] max-w-[889px] h-[277px]' alt="stone-image" />
-      <img src={rightEllipse} className='absolute top-[208px] h-[602px] right-0 max-w-[690px] w-full' alt="right-ellips" />
+      <img src={leftEllipse} className='absolute left bottom-0 max-w-[550px] sm:block hidden' alt="left-ellipse" />
+      <img src={stoneImg} className='absolute left-0 bottom-[160px] max-w-[889px] h-[277px] sm:block hidden' alt="stone-image" />
+      <img src={rightEllipse} className='absolute top-[208px] h-[602px] right-0 max-w-[690px] w-full sm:block hidden' alt="right-ellips" />
           <div className='container'>
               <h2 className='lg:text-[56px] lg:leading-[67.77px] md:text-5xl sm:text-4xl text-3xl font-semibold text-center pb-4 text-white'>Roadmap</h2>
         <p className='text-white opacity-70 text-center'>This is not a short-term project, it's a project for life where the community will be involved and can evolve</p>
-        <div className='relative max-w-[1056px] mx-auto mt-[94px]'>
-          <div className='absolute w-[5px] h-[100%] bg-roadmap-line top-[1px] bottom-0 bg-cover lg:left-0 left-6'><img src={roadMapImg} className='w-[43px]' alt="roadmap-image" /></div>
+        <div className='relative max-w-[1056px] mx-auto mt-[94px] after:contents-[""] after:absolute after:top-0 after:bg-roadmap-line after:bottom-0 after:h-full after:w-[10px]'>
           <div className='relative after:absolute lg:ps-[125px] ps-24 after:contents-[""] after:top-0 lg:after:left-[-40px] after:left-0 after:bg-cover bg-center bg-no-repeat after:bg-question-one lg:after:w-[88px] after:w-14 after:h-14 after:z-10 lg:after:h-[88px]'>
+             <img src={rocketImg} className='absolute lg:-left-4 lg:top-20 left-[10px] top-11 lg:w-[43px] w-8 h-28 lg:h-[134px] sm:block hidden' alt="rocket-image" />
             <h5 className='font-semibold text-3xl pb-4 sm:pb-[22px] lg:text-[40px] lg:leading-[48px] text-white'>2024</h5>
             <div className='flex gap-4 items-start'>
               <img src={handUp} alt="hand-up" />
@@ -68,7 +68,7 @@ const RoadMapThird = () => {
               <p className='text-base font-normal sm:pb-4 pb-3 text-white opacity-70'>Donate $100,000 to help families with children that wish to work for NASA or other space programmes (we will confirm the best way to achieve this to ensure all money is used the right way)</p>
             </div>
           </div>
-          <div className='relative lg:mt-[136px] md:mt-20 mt-12 lg:pb-40 md:pb-20 pb-12 after:absolute lg:ps-[125px] ps-24 after:contents-[""] after:top-0 lg:after:left-[-40px] after:left-0 after:bg-cover after:bg-question-three lg:after:w-[88px] after:w-14 after:h-14 after:z-10 lg:after:h-[88px]'>
+          <div className='relative lg:mt-[136px] md:mt-20 mt-12 lg:pb-36 md:pb-20 pb-12 after:absolute lg:ps-[125px] ps-24 after:contents-[""] after:top-0 lg:after:left-[-40px] after:left-0 after:bg-cover after:bg-question-three lg:after:w-[88px] after:w-14 after:h-14 after:z-10 lg:after:h-[88px]'>
             <h5 className='font-semibold text-3xl pb-4 sm:pb-[22px] lg:text-[40px] lg:leading-[48px] text-white'>2024</h5>
             <div className='flex gap-4 items-start'>
               <img src={handUp} alt="hand-up" />

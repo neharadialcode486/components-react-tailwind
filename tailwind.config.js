@@ -18,7 +18,7 @@ module.exports = {
       backgroundImage: {
         'line': "url('./assets/images/webp/roadmap-line.webp')",
         'circle': "url('./assets/images/webp/circle-image.webp')",
-        'roadmap-line': "url('./assets/images/webp/roadmap-line-image.png')",
+        'roadmap-line': "url('./assets/images/webp/roadmap-line-image.webp')",
         'question-one': "url('./assets/images/webp/question-one.webp')",
         'question-two': "url('./assets/images/webp/question-two.webp')",
         'question-three': "url('./assets/images/webp/question-three.webp')",
