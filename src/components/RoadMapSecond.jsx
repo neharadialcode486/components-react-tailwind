@@ -1,5 +1,6 @@
 import React from 'react';
 import roadmapImage from '../assets/images/webp/roadmap-dotsline.webp'
+import { ROADMAP_Items } from '../utils/Helper';
 
 const RoadMapSecond = () => {
     return (
@@ -54,26 +55,15 @@ const RoadMapSecond = () => {
                 </div>
                 <div className='lg:hidden block'>
                     <div className='relative after:absolute after:w-[2px] after:h-[100%] after:bg-gray-300 after:top-[7px] after:bottom-0 max-lg:after:left-[20px]'>
-                        <div className='relative mt-6 ps-14 after:absolute after:contents-[""] after:top-0 after:left-[6px] after:bg-cover after:bg-circle after:w-[29px] after:z-10 after:h-[29px]'>
-                            <h4 className='text-xl leading-6 text-[#1e1e1e] font-semibold pb-[10px]'>Lorem ipsum </h4>
-                            <p className='text-base text-[#4d4d4d]'>Lorem ipsum dolor sit amet consectetur. </p>
-                        </div>
-                        <div className='relative mt-6 ps-14 after:absolute after:contents-[""] after:top-0 after:left-[6px] after:bg-cover after:bg-circle after:w-[29px] after:z-10 after:h-[29px]'>
-                            <h4 className='text-xl leading-6 text-[#1e1e1e] font-semibold pb-[10px]'>Lorem ipsum </h4>
-                            <p className='text-base text-[#4d4d4d]'>Lorem ipsum dolor sit amet consectetur. </p>
-                        </div>
-                        <div className='relative mt-6 ps-14 after:absolute after:contents-[""] after:top-0 after:left-[6px] after:bg-cover after:bg-circle after:w-[29px] after:z-10 after:h-[29px]'>
-                            <h4 className='text-xl leading-6 text-[#1e1e1e] font-semibold pb-[10px]'>Lorem ipsum </h4>
-                            <p className='text-base text-[#4d4d4d]'>Lorem ipsum dolor sit amet consectetur. </p>
-                        </div>
-                        <div className='relative mt-6 ps-14 after:absolute after:contents-[""] after:top-0 after:left-[6px] after:bg-cover after:bg-circle after:w-[29px] after:z-10 after:h-[29px]'>
-                            <h4 className='text-xl leading-6 text-[#1e1e1e] font-semibold pb-[10px]'>Lorem ipsum </h4>
-                            <p className='text-base text-[#4d4d4d]'>Lorem ipsum dolor sit amet consectetur. </p>
-                        </div>
-                        <div className='relative mt-6 ps-14 pb-6 after:absolute after:contents-[""] after:top-0 after:left-[6px] after:bg-cover after:bg-circle after:w-[29px] after:z-10 after:h-[29px]'>
-                            <h4 className='text-xl leading-6 text-[#1e1e1e] font-semibold pb-[10px]'>Lorem ipsum </h4>
-                            <p className='text-base text-[#4d4d4d]'>Lorem ipsum dolor sit amet consectetur. </p>
-                        </div>
+                        {ROADMAP_Items.map((item, index) => (
+                            <div
+                                key={index}
+                                className={`relative mt-6 ps-14 ${index === ROADMAP_Items.length - 1 ? 'pb-6' : ''} after:absolute after:contents-[""] after:top-0 after:left-[6px] after:bg-cover after:bg-circle after:w-[29px] after:z-10 after:h-[29px]`}
+                            >
+                                <h4 className='text-xl leading-6 text-[#1e1e1e] font-semibold pb-[10px]'>{item.title}</h4>
+                                <p className='text-base text-[#4d4d4d]'>{item.description}</p>
+                            </div>
+                        ))}
                     </div>
                     <div className='relative ps-14 after:absolute after:contents-[""] after:top-0 after:left-[6px] after:bg-cover after:bg-circle after:w-[29px] after:z-10 after:h-[29px]'>
                         <h4 className='text-xl leading-6 text-[#1e1e1e] font-semibold pb-[10px]'>Lorem ipsum </h4>
