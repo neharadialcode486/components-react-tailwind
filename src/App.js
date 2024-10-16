@@ -1,5 +1,6 @@
 import './App.css';
 import HeroFirst from './components/HeroFirst';
+import HeroSecond from './components/HeroSecond';
 import HeroThird from './components/HeroThird';
 import HeroFourth from './components/HeroFourth';
 import HeroFifth from './components/HeroFifth';
@@ -12,6 +13,7 @@ function App() {
   return (
    <>
    <HeroFirst/>
+    <HeroSecond/>
    <HeroThird/>
    <HeroFourth/>
    <HeroFifth/>
