@@ -17,6 +17,7 @@ module.exports = {
       },
       backgroundImage: {
         'line': "url('./assets/images/webp/roadmap-line.webp')",
+        'circle': "url('./assets/images/webp/circle-image.webp')",
       },
     },
     plugins: [],
