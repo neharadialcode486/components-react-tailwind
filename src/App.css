@@ -4,3 +4,14 @@
 * {
     font-family: 'Inter', sans-serif;
 }
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: '' !important;
+}
+
+.swiper-button-next svg,
+.swiper-button-prev svg {
+    width: auto !important;
+    height: auto !important;
+}
