@@ -30,7 +30,7 @@ const DataSwiper = () => {
                     onSlideChange={() => console.log('slide change')}
                     onSwiper={(swiper) => console.log(swiper)}
                     breakpoints={{
-                        640: {
+                        768: {
                             slidesPerView: 2,
                         },
                         1024: {
@@ -43,7 +43,7 @@ const DataSwiper = () => {
                 >
                     {SWIPER_DATA.map((items, idx) => (
                         <SwiperSlide key={idx}>
-                            <div className="relative overflow-hidden rounded-lg w-full">
+                            <div className="relative overflow-hidden rounded-lg w-full h-full min-h-[292px] bg-white">
                                 <div className="relative overflow-hidden">
                                     <img src={items.img} alt={items.img} className='w-full relative z-10 hover:scale-110 duration-300 ease-linear' />
                                 </div>

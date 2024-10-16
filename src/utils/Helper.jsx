@@ -17,7 +17,7 @@ export const SWIPER_DATA = [
     { img: landscape, title: "Leadership: Leading the hydrogen economy" },
     { img: house, title: "Biodiversity - Sixth mass exctinction" },
 ]
-export const TABS_SWIPER = [
+export const TABS_DATA = [
     {
         title: "Dashboard",
         icon: "dashboardIcon",
