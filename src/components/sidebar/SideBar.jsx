@@ -1,6 +1,6 @@
 import React from 'react'
 import Header from './Header'
-import plus from "../../assets/images/webp/plus-iocns.png";
+import plus from "../../assets/images/webp/plus-iocns.webp";
 import Icon from '../common/Icons';
 import { EVENTS_DATA } from '../../utils/Helper';
 import DataSwiper from './DataSwiper';

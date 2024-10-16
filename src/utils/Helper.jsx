@@ -1,7 +1,7 @@
-import landscape from "../assets/images/webp/landscape.png";
-import house from "../assets/images/webp/house.png";
-import nigeria from "../assets/images/webp/nigeria.png";
-import lng from "../assets/images/webp/lng-img.png";
+import landscape from "../assets/images/webp/landscape.webp";
+import house from "../assets/images/webp/house.webp";
+import nigeria from "../assets/images/webp/nigeria.webp";
+import lng from "../assets/images/webp/lng-img.webp";
 
 export const EVENTS_DATA = [
     { date: "26", months: "May", title: "The role of LNG", time: "14:00 - 15:00", location: "Nijenborgh 6, room 1.06" },
@@ -17,3 +17,25 @@ export const SWIPER_DATA = [
     { img: landscape, title: "Leadership: Leading the hydrogen economy" },
     { img: house, title: "Biodiversity - Sixth mass exctinction" },
 ]
+export const TABS_SWIPER = [
+    {
+        title: "Dashboard",
+        icon: "dashboardIcon",
+        tabsContent: SWIPER_DATA,
+    },
+    {
+        title: "Events",
+        icon: "eventsIcon",
+        tabsContent: SWIPER_DATA,
+    },
+    {
+        title: "On demand",
+        icon: "onIcon",
+        tabsContent: SWIPER_DATA,
+    },
+    {
+        title: "Programmes",
+        icon: "programmesIcon",
+        tabsContent: SWIPER_DATA,
+    },
+];
