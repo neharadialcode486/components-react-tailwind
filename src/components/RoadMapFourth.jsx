@@ -8,7 +8,7 @@ import rocketImg from '../assets/images/webp/rocket-image.webp'
 
 const RoadMapThird = () => {
   return (
-    <div className='bg-black lg:pt-32 md:pt-20 lg:pb-36 md:pb-28 sm:pb-20 pb-16 xl:pb-[162px] sm:pt-16 pt-10 xl:pt-40 relative'>
+    <div className='bg-black lg:pt-32 md:pt-20 lg:pb-36 md:pb-28 sm:pb-20 pb-16 xl:pb-[162px] sm:pt-16 pt-10 xl:pt-40 relative mt-20'>
       <img src={menImg} className='absolute  z-[1] xl:max-w-[184px] md:max-w-[130px] max-w-[80px] w-full right-[30px] top-[318px] sm:block hidden' alt="men-image" />
       <img src={leftEllipse} className='absolute left bottom-0 max-w-[550px] sm:block hidden' alt="left-ellipse" />
       <img src={stoneImg} className='absolute left-0 bottom-[160px] max-w-[889px] h-[277px] sm:block hidden' alt="stone-image" />
