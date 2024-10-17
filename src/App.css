@@ -1,11 +1,24 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+.icons-size {
+  width: 192px;
+  height: 67px;
+  margin: 0px 12px;
+  pointer-events: none;
+}
 
-* {
-  font-family: "Inter", sans-serif;
+.slide-scroll {
+  animation: slide 20s linear infinite;
 }
-.hero-3-bg-img{
-background-image: url('./assets/images/svg/hero-3-bg.svg');
+
+.slide-scroll:hover {
+  animation-play-state: paused;
 }
-.hero-6-bg-img{
-  background-image: url('./assets/images/png/hero-6-bg-img.png');
+
+@keyframes slide {
+  0% {
+      transform: translateX(-50%);
+  }
+
+  100% {
+      transform: translateX(0%);
+  }
 }
