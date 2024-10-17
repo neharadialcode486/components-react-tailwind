@@ -1,17 +1,10 @@
-
 import './App.css';
-import RoadMapFirst from './components/RoadMapFirst';
-import RoadMapSecond from './components/RoadMapSecond';
-import RoadMapThirdRoad from './components/RoadMapThirdRoad';
-import RoadMapFourth from './components/RoadMapFourth';
+import LottiePractice from './components/LottiePractice';
 
 function App() {
   return (
     <>
-      <RoadMapFirst />
-      <RoadMapSecond />
-      <RoadMapThirdRoad />
-      <RoadMapFourth />
+      <LottiePractice />
     </>
   );
 }
