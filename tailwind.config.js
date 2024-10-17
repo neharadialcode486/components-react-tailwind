@@ -17,15 +17,6 @@ module.exports = {
         padding: "20px",
       },
       colors: {
-        // 'off-blue': "#076787",
-        // 'light-blue': "#82B2C2",
-        // 'light-green': "#85B6A6",
-        // 'off-white': "#FFFFFF33",
-        // 'off-gray': "#AFCBD521",
-        // 'medium-orange': "#FF8C00",
-        // 'lighter-orange': "#FF8C0033",
-        // 'off-pink': "#FFDEDD",
-        // 'off-red': "#DA6015",
         'off-yellow': "#FFED00",
         'dark-gray': "#EAE9E3",
       }
