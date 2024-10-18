@@ -2,7 +2,7 @@ import React from 'react';
 
 const HeroSection = () => {
   return (
-    <section
+    <div
     className="min-h-screen flex hero-6-bg-img justify-center items-center bg-cover bg-no-repeat"
     
   >
@@ -20,7 +20,7 @@ const HeroSection = () => {
         </button>
       </div>
     </div>
-  </section>
+  </div>
   );
 };
 

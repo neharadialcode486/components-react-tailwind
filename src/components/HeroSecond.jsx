@@ -10,7 +10,7 @@ import HeroTwoBottomRightSecImg from '../assets/images/png/hero-2-bottom-right-s
 
 const HeroSection = () => {
   return (
-    <section className="relative overflow-hidden flex items-center justify-center min-h-screen">
+    <div className="relative overflow-hidden flex items-center justify-center min-h-screen">
    
       <div className="absolute top-0 left-0">
         <div className="relative">
@@ -33,8 +33,8 @@ const HeroSection = () => {
           Lorem ipsum dolor sit amet consectetur. Velit pulvinar libero porttitor quam sed aliquet. Sodales vulputate elementum arcu donec. Feugiat nibh ullamcorper egestas lectus risus ornare ullamcorper fames. Cursus libero nec facilisis risus malesuada arcu cum.
         </p>
         <div className="flex gap-4 justify-center flex-wrap mt-[30px]">
-          <button className="py-[14.5px] px-[56px] bg-white font-semibold text-[#3C278D] border border-[#3C278D] rounded-[12px] hover:bg-[#3C278D] hover:text-white transition-all duration-300">Button</button>
-          <button className="py-[14.5px] px-[56px] bg-white font-semibold text-[#3C278D] border border-[#3C278D] rounded-[12px] hover:bg-[#3C278D] hover:text-white transition-all duration-300">Button</button>
+          <button className="py-[11px] px-[56px] bg-white font-semibold text-[#3C278D] border border-[#3C278D] rounded-[12px] hover:bg-[#3C278D] hover:text-white transition-all duration-300">Button</button>
+          <button className="py-[11px] px-[56px] bg-white font-semibold text-[#3C278D] border border-[#3C278D] rounded-[12px] hover:bg-[#3C278D] hover:text-white transition-all duration-300">Button</button>
         </div>
       </div>
 
@@ -51,7 +51,7 @@ const HeroSection = () => {
           <img src={HeroTwoBottomRightFirstImg} alt="hero-2-top-sec-img" className="absolute right-[37%] max-md:right-[70%] max-md:w-1/2 bottom-[54%]" />
         </div>
       </div>
-    </section>
+    </div>
   );
 };
 

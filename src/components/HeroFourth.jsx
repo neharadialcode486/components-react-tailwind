@@ -3,7 +3,7 @@ import HeroFourthImg from '../assets/images/png/leaves.png'
 
 const HeroSection = () => {
   return (
-    <section className="min-h-screen flex justify-center items-center">
+    <div className="min-h-screen flex justify-center items-center">
       <div className="container flex flex-col justify-around items-center max-w-6xl mx-auto">
         <h1 className="text-black font-bold text-5xl leading-[150%]">
           Lorem ipsum Lorem ipsum
@@ -20,7 +20,7 @@ const HeroSection = () => {
         </button>
         <img className="max-w-full" src={HeroFourthImg} alt="Decorative leaves" />
       </div>
-    </section>
+    </div>
   );
 };
 

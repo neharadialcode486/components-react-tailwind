@@ -4,7 +4,7 @@ import HeroCubeShadow from '../assets/images/svg/hero-8-cube-shadow.svg'
 
 const HeroSection = () => {
   return (
-    <section className="relative min-h-screen flex justify-center items-center bg-[#0A0A08] overflow-hidden">
+    <div className="relative min-h-screen flex justify-center items-center bg-[#0A0A08] overflow-hidden">
       <div className="max-w-[1140px] px-4 mx-auto flex justify-center items-center">
         <div className="flex flex-col justify-center items-center max-w-[712px] text-center">
           <h1 className="text-5xl lg:text-[64px] leading-[120%] text-white font-normal">
@@ -22,7 +22,7 @@ const HeroSection = () => {
       <img src={HeroCubeShadow} alt="cube shadow" className="absolute blur-lg bottom-[-35%] right-[-20%] pointer-events-none" />
       <img src={HeroCube} alt="cube" className="absolute blur-lg top-[5%] left-[5%] pointer-events-none" />
       <img src={HeroCubeShadow} alt="cube shadow" className="absolute blur-lg top-[-35%] left-[-20%] pointer-events-none" />
-    </section>
+    </div>
   );
 };
 

@@ -3,7 +3,7 @@ import HeroFirstImg from '../assets/images/png/hero-image.png'
 
 const HeroFirst = () => {
   return (
-    <section className="min-h-screen flex overflow-hidden items-center py-4 lg:py-3">
+    <div className="min-h-screen flex overflow-hidden items-center py-4 lg:py-3">
     <div className="max-w-[1140px] mx-auto px-3">
       <div className="flex flex-wrap lg:flex-nowrap gap-4">
         <div className="flex w-full lg:w-6/12 flex-col">
@@ -17,10 +17,10 @@ const HeroFirst = () => {
             Lorem ipsum dolor sit amet consectetur. Velit pulvinar libero porttitor quam sed aliquet. Sodales vulputate elementum arcu donec.
           </p>
           <div className="flex gap-5 max-md:gap-4 flex-wrap mt-8">
-            <button className="bg-white text-indigo-900 border border-indigo-900 rounded-lg px-14 py-3 font-semibold transition duration-300 hover:bg-indigo-900 hover:text-white max-md:text-sm">
+            <button className="bg-white text-indigo-900 border border-indigo-900 rounded-lg px-14 py-[11px] font-semibold transition duration-300 hover:bg-indigo-900 hover:text-white max-md:text-sm">
               Button
             </button>
-            <button className="bg-white text-indigo-900 border border-indigo-900 rounded-lg px-14 py-3 font-semibold transition duration-300 hover:bg-indigo-900 hover:text-white max-md:text-sm">
+            <button className="bg-white text-indigo-900 border border-indigo-900 rounded-lg px-14 py-[11px] font-semibold transition duration-300 hover:bg-indigo-900 hover:text-white max-md:text-sm">
               Button
             </button>
           </div>
@@ -30,7 +30,7 @@ const HeroFirst = () => {
         </div>
       </div>
     </div>
-  </section>
+  </div>
   )
 }
 

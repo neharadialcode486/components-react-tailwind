@@ -5,7 +5,7 @@ import Vehical from  '../assets/images/png/vehical-img.png'
 
 const HeroSection = () => {
   return (
-    <section className="relative py-4 overflow-hidden min-h-screen flex justify-center items-center bg-[#0B0B09]">
+    <div className="relative py-4 overflow-hidden min-h-screen flex justify-center items-center bg-[#0B0B09]">
     <div className="mx-auto max-w-[1140px]">
       <div className="flex flex-col lg:flex-row gap-4">
         <div className="lg:w-1/2 px-4 w-full flex flex-col justify-center items-center lg:items-start">
@@ -39,7 +39,7 @@ const HeroSection = () => {
       alt="shadow"
       className="absolute bottom-0 left-0 pointer-events-none"
     />
-  </section>
+  </div>
   );
 };
 

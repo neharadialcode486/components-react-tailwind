@@ -3,7 +3,7 @@ import Flower from '../assets/images/png/hero-5-flower-img.png'
 import HeroFifthImg from '../assets/images/png/hero-5-2nd-img.png'
 const HeroSection = () => {
     return (
-        <section className="flex py-3 justify-center items-center min-h-screen">
+        <div className="flex py-3 justify-center items-center min-h-screen">
         <div className="container max-w-[1140px]">
           <div className="flex flex-col lg:flex-row gap-4">
             <div className="lg:w-5/12 w-full px-3">
@@ -25,7 +25,7 @@ const HeroSection = () => {
             </div>
           </div>
         </div>
-      </section>
+      </div>
     );
 };
 
