@@ -1,17 +1,14 @@
-
 import './App.css';
-import RoadMapFirst from './components/RoadMapFirst';
-import RoadMapSecond from './components/RoadMapSecond';
-import RoadMapThirdRoad from './components/RoadMapThirdRoad';
-import RoadMapFourth from './components/RoadMapFourth';
+import BackToTop from './components/BackToTop';
 
 function App() {
   return (
     <>
-      <RoadMapFirst />
-      <RoadMapSecond />
-      <RoadMapThirdRoad />
-      <RoadMapFourth />
+      <div className='bg-black min-h-screen'></div>
+      <div className='bg-slate-500 min-h-screen'></div>
+      <div className='bg-red-500 min-h-screen'></div>
+      <div className='bg-orange-500 min-h-screen'></div>
+      <BackToTop />
     </>
   );
 }
