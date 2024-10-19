@@ -15,7 +15,7 @@ const HeroSection = () => {
           Innovative Concrete Logistics - Revolutionizing concrete delivery for commercial and residential projects in
           Houston, San Antonio, Austin, and Dallas.
         </p>
-        <button className="py-3.5 px-6 font-semibold bg-[#46AD47] text-black rounded-lg transition-all hover:shadow-[0_7px_29px_0_#46AD47]">
+        <button className="py-[11.5px] px-[29px] font-semibold bg-[#46AD47] text-black rounded-lg transition-all hover:shadow-[0_7px_29px_0_#46AD47]">
           Start Your Project
         </button>
       </div>

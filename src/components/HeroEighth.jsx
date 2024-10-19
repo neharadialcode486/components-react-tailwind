@@ -13,7 +13,7 @@ const HeroSection = () => {
           <p className="text-sm lg:text-base text-[#B5B5B5] mt-4 mb-10 leading-[150%]">
             Innovative Concrete Logistics - Revolutionizing concrete delivery for commercial and residential projects in Houston, San Antonio, Austin, and Dallas.
           </p>
-          <button className="py-3.5 px-6 font-semibold bg-[#46AD47] text-black rounded-lg transition-all hover:shadow-[0_7px_29px_0_#46AD47]">
+          <button className="py-[11.5px] px-[29px] font-semibold bg-[#46AD47] text-black rounded-xl transition-all hover:shadow-[0_7px_29px_0_#46AD47]">
             Start Your Project
           </button>
         </div>

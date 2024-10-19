@@ -20,11 +20,11 @@ const HeroSection = () => {
             Start Your Project
           </button>
         </div>
-        <div className="lg:w-1/2 w-full relative">
+        <div className="lg:w-1/2 w-full ">
           <img
             src={Vehical}
             alt="Vehical"
-            className="w-full lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:right-0 pointer-events-none"
+            className="max-lg:w-full lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:right-0 pointer-events-none"
           />
         </div>
       </div>
