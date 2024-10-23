@@ -1,0 +1,68 @@
+[debug] [2024-10-23T04:51:17.285Z] ----------------------------------------------------------------------
+[debug] [2024-10-23T04:51:17.287Z] Command:       /usr/local/bin/node /Users/ankush/.npm-global/bin/firebase init
+[debug] [2024-10-23T04:51:17.287Z] CLI Version:   13.22.1
+[debug] [2024-10-23T04:51:17.287Z] Platform:      darwin
+[debug] [2024-10-23T04:51:17.287Z] Node Version:  v20.18.0
+[debug] [2024-10-23T04:51:17.287Z] Time:          Wed Oct 23 2024 10:21:17 GMT+0530 (India Standard Time)
+[debug] [2024-10-23T04:51:17.287Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2024-10-23T04:51:17.326Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2024-10-23T04:51:17.326Z] > authorizing via signed-in user (ankushdhull966@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  /Users/ankush/Desktop/components-react-tailwind
+
+Before we get started, keep in mind:
+
+  * You are initializing within an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[debug] [2024-10-23T04:51:22.356Z] Using project from CLI flag: footer-react-tailwind
+[debug] [2024-10-23T04:51:22.357Z] Checked if tokens are valid: false, expires at: 1729659851851
+[debug] [2024-10-23T04:51:22.357Z] Checked if tokens are valid: false, expires at: 1729659851851
+[debug] [2024-10-23T04:51:22.358Z] > refreshing access token with scopes: []
+[debug] [2024-10-23T04:51:22.360Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2024-10-23T04:51:22.360Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-23T04:51:22.742Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 200
+[debug] [2024-10-23T04:51:22.742Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2024-10-23T04:51:22.754Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/footer-react-tailwind [none]
+[debug] [2024-10-23T04:51:23.329Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/footer-react-tailwind 200
+[debug] [2024-10-23T04:51:23.329Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/footer-react-tailwind {"projectId":"footer-react-tailwind","projectNumber":"207514719317","displayName":"footer-react-tailwind","name":"projects/footer-react-tailwind","resources":{"hostingSite":"footer-react-tailwind"},"state":"ACTIVE","etag":"1_c4dad98f-37d1-4165-9fab-9fafe77573fa"}
+[info] i  Using project footer-react-tailwind (footer-react-tailwind) 
+[info] 
+=== Hosting Setup
+[debug] [2024-10-23T04:51:23.335Z] Checked if tokens are valid: true, expires at: 1729662681743
+[debug] [2024-10-23T04:51:23.335Z] Checked if tokens are valid: true, expires at: 1729662681743
+[debug] [2024-10-23T04:51:23.335Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/footer-react-tailwind [none]
+[debug] [2024-10-23T04:51:23.678Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/footer-react-tailwind 200
+[debug] [2024-10-23T04:51:23.678Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/footer-react-tailwind {"projectId":"footer-react-tailwind","projectNumber":"207514719317","displayName":"footer-react-tailwind","name":"projects/footer-react-tailwind","resources":{"hostingSite":"footer-react-tailwind"},"state":"ACTIVE","etag":"1_c4dad98f-37d1-4165-9fab-9fafe77573fa"}
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2024-10-23T04:53:30.600Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
+[debug] [2024-10-23T04:53:30.766Z] <<< [apiv2][status] GET https://www.gstatic.com/firebasejs/releases.json 200
+[debug] [2024-10-23T04:53:30.767Z] <<< [apiv2][body] GET https://www.gstatic.com/firebasejs/releases.json {"current":{"version":"11.0.1","browserURL":"https://www.gstatic.com/firebasejs/11.0.1/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/11.0.1/firebase.tgz"},"live":{"version":"11.0","browserURL":"https://www.gstatic.com/firebasejs/live/11.0/firebase.js","packageURL":"https://www.gstatic.com/firebasejs/live/11.0/firebase.tgz"},"components":{"analytics":"https://www.gstatic.com/firebasejs/11.0.1/firebase-analytics.js","app":"https://www.gstatic.com/firebasejs/11.0.1/firebase-app.js","app-check":"https://www.gstatic.com/firebasejs/11.0.1/firebase-app-check.js","auth":"https://www.gstatic.com/firebasejs/11.0.1/firebase-auth.js","auth/cordova":"https://www.gstatic.com/firebasejs/11.0.1/firebase-auth/cordova.js","auth/web-extension":"https://www.gstatic.com/firebasejs/11.0.1/firebase-auth/web-extension.js","functions":"https://www.gstatic.com/firebasejs/11.0.1/firebase-functions.js","firestore":"https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.js","firestore/lite":"https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore/lite.js","installations":"https://www.gstatic.com/firebasejs/11.0.1/firebase-installations.js","storage":"https://www.gstatic.com/firebasejs/11.0.1/firebase-storage.js","performance":"https://www.gstatic.com/firebasejs/11.0.1/firebase-performance.js","remote-config":"https://www.gstatic.com/firebasejs/11.0.1/firebase-remote-config.js","messaging":"https://www.gstatic.com/firebasejs/11.0.1/firebase-messaging.js","messaging/sw":"https://www.gstatic.com/firebasejs/11.0.1/firebase-messaging/sw.js","database":"https://www.gstatic.com/firebasejs/11.0.1/firebase-database.js","vertexai":"https://www.gstatic.com/firebasejs/11.0.1/firebase-vertexai.js","data-connect":"https://www.gstatic.com/firebasejs/11.0.1/firebase-data-connect.js","firestore.memory":"https://www.gstatic.com/firebasejs/11.0.1/firebase-firestore.memory.js"}}
+[info] i  Skipping write of build/index.html 
+[info] 
+[info] i  Detected a .git folder at /Users/ankush/Desktop/components-react-tailwind 
+[info] i  Authorizing with GitHub to upload your service account to a GitHub repository's secrets store. 
+[info] 
+[info] Visit this URL on this device to log in:
+[info] https://github.com/login/oauth/authorize?client_id=89cf50f02ac6aaed3484&state=598045571&redirect_uri=http%3A%2F%2Flocalhost%3A9005&scope=read%3Auser%20repo%20public_repo
+[info] 
+[info] Waiting for authentication...

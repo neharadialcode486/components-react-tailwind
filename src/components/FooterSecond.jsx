@@ -1,16 +1,15 @@
 import React from 'react'
 import FooterLogo from '../assets/image/svg/footer-2-logo.svg'
-import FacebookIconSecond from '../assets/image/svg/facebook-2-icon.svg'
+import FacebookIconSecond from '../assets/image/svg/footer-2-fb-icon.svg'
 import FooterSecondTwitter from '../assets/image/svg/footer-2-twitter-icon.svg'
 import FooterSecondLinkedin from '../assets/image/svg/footer-2-linkedin-icon.svg'
-import FacebookIconSecond from '../assets/image/svg/facebook-2-icon.svg'
 import InstaIconSecond from '../assets/image/svg/footer-2-insta-icon.svg'
 import EmailIcon from '../assets/image/svg/email-icon.svg'
 
 export const FooterSecond = () => {
   return (
-    <footer class="min-h-screen bg-[#1E1E1E] flex items-center justify-center flex-col py-10">
-    <div class="container mx-auto px-4">
+    <footer class="min-h-screen max-w-[1920px] mx-auto  bg-[#1E1E1E] flex items-center justify-center flex-col py-10">
+    <div class="container mx-auto max-w-[1140px] px-4">
         <div class="flex flex-wrap justify-between">
             <div class="xl:w-5/12 md:w-6/12 w-full text-center md:text-left">
                 <div class="mb-4 max-w-[308px] md:mx-0 mx-auto">
@@ -22,16 +21,16 @@ export const FooterSecond = () => {
                     donec lacus vitae
                     elit dictum eros cras sagittis. Ac in sem mi ipsum urna</p>
                 <div class="flex justify-center md:justify-start gap-[18px]">
-                    <a href="https://www.facebook.com/" target="_blank">
+                    <a className='hover:scale-[1.2] transition-all duration-300' href="https://www.facebook.com/" target="_blank">
                         <img src={FacebookIconSecond} alt="facebook-icon"/>
                     </a>
-                    <a href="https://www.twitter.com/" target="_blank">
+                    <a className='hover:scale-[1.2] transition-all duration-300' href="https://www.twitter.com/" target="_blank">
                         <img src={FooterSecondTwitter} alt="twitter-icon"/>
                     </a>
-                    <a href="https://www.linkedin.com/" target="_blank">
+                    <a className='hover:scale-[1.2] transition-all duration-300' href="https://www.linkedin.com/" target="_blank">
                         <img src={FooterSecondLinkedin} alt="linkedin-icon"/>
                     </a>
-                    <a href="https://www.instagram.com/" target="_blank">
+                    <a className='hover:scale-[1.2] transition-all duration-300' href="https://www.instagram.com/" target="_blank">
                         <img src={InstaIconSecond} alt="instagram-icon"/>
                     </a>
                 </div>

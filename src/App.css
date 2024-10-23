@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+* {
+    font-family: "Inter", sans-serif !important;
+}
+
+.footer-bg-3 {
+    background-image: url(./assets/image/webp/bg-footer-3.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.common-hover-3:hover{
+    color: #38ADB5;
+}
+.common-hover-4:hover{
+    color: #EB0055;
+}
+.common-hover-5:hover{
+    color: #FFFFFF;
+}
