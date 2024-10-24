@@ -24,7 +24,7 @@ export const AboutForth = () => {
                             </button>
                         </div>
                     </div>
-                    <div class="flex lg:w-1/2 w-full flex-col justify-center text-center lg:text-left relative px-3">
+                    <div class="flex lg:w-1/2 w-full flex-col justify-center xl:justify-end text-center lg:text-left relative px-3">
                         <img className="sec-img max-lg:!static absolute top-[-120%] max-lg:mt-10 max-lg:mx-auto max-sm:w-full" src={SecFourSideImg} alt="side img"/>
                     </div>
                 </div>
