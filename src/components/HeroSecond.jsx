@@ -11,28 +11,28 @@ import HeroTwoBottomRightSecImg from '../assets/images/png/hero-2-bottom-right-s
 const HeroSection = () => {
   return (
     <div className="relative overflow-hidden flex items-center justify-center min-h-screen">
-   
+
       <div className="absolute top-0 left-0">
         <div className="relative">
           <img src={HeroTwoTopLeftFirstImg} alt="hero-2-top-first-img" className="max-md:w-1/2" />
-          <img src={HeroTwoTopLeftSecImg} alt="hero-2-top-sec-img" className="absolute left-[37%] max-md:w-1/2 top-[54%]" />
+          <img src={HeroTwoTopLeftSecImg} alt="hero-2-top-sec-img" className="absolute left-[37%] lg:min-w-[247px] max-md:w-1/2 top-[54%]" />
         </div>
       </div>
 
       <div className="absolute top-0 right-0 max-md:right-[-19%] max-sm:right-[-33%]">
         <div className="relative">
           <img src={HeroTwoTopRightFirstImg} alt="hero-2-top-first-img" className="max-md:w-1/2" />
-          <img src={HeroTwoTopRightSecImg} alt="hero-2-top-sec-img" className="absolute max-md:w-1/2 right-[37%] max-md:right-[67%] top-[54%]" />
+          <img src={HeroTwoTopRightSecImg} alt="hero-2-top-sec-img" className="absolute max-md:w-1/2 lg:min-w-[247px] right-[37%] max-md:right-[67%] top-[54%]" />
         </div>
       </div>
 
-      <div className="relative z-30 flex flex-col items-center justify-center mx-auto w-full max-w-[538px] p-6">
+      <div className="relative z-30 flex flex-col items-center justify-center mx-auto w-full max-w-[538px]">
         <p className="text-center font-normal text-black text-[32px] leading-[150%] mb-0">A nice headline</p>
         <h1 className="font-semibold text-center text-[64px] leading-[150%] mb-2">Goes here</h1>
-        <p className="text-center text-[#4D4D4D] text-[16px] leading-[150%]">
+        <p className="text-center text-[#4D4D4D] max-w-[538px] mx-auto text-[16px] leading-[150%]">
           Lorem ipsum dolor sit amet consectetur. Velit pulvinar libero porttitor quam sed aliquet. Sodales vulputate elementum arcu donec. Feugiat nibh ullamcorper egestas lectus risus ornare ullamcorper fames. Cursus libero nec facilisis risus malesuada arcu cum.
         </p>
-        <div className="flex gap-4 justify-center flex-wrap mt-[30px]">
+        <div className="flex gap-6 justify-center flex-wrap mt-[30px]">
           <button className="py-[11px] px-[56px] bg-white font-semibold text-[#3C278D] border border-[#3C278D] rounded-[12px] hover:bg-[#3C278D] hover:text-white transition-all duration-300">Button</button>
           <button className="py-[11px] px-[56px] bg-white font-semibold text-[#3C278D] border border-[#3C278D] rounded-[12px] hover:bg-[#3C278D] hover:text-white transition-all duration-300">Button</button>
         </div>
@@ -41,7 +41,7 @@ const HeroSection = () => {
       <div className="absolute bottom-[6px] left-0">
         <div className="relative">
           <img src={HeroTwoBottomLeftFirstImg} alt="hero-2-top-first-img" className="max-md:w-1/2" />
-          <img src={HeroTwoBottomLeftSecImg} alt="hero-2-top-sec-img" className="absolute left-[37%] max-md:w-1/2 bottom-[54%]" />
+          <img src={HeroTwoBottomLeftSecImg} alt="hero-2-top-sec-img" className="absolute left-[37%] lg:min-w-[313px] max-md:w-1/2 bottom-[54%]" />
         </div>
       </div>
 

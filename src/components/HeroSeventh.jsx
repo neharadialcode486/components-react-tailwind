@@ -16,7 +16,7 @@ const HeroSection = () => {
             Innovative Concrete Logistics - Revolutionizing concrete delivery for commercial and residential projects
             in Houston, San Antonio, Austin, and Dallas.
           </p>
-          <button className="py-3.5 px-6 font-semibold bg-[#46AD47] text-sm md:text-base text-black rounded-lg transition-all hover:shadow-[0_7px_29px_0_#46AD47]">
+          <button className="py-[11.5px] px-6 font-semibold bg-[#46AD47] text-sm md:text-base text-black rounded-lg transition-all hover:shadow-[0_7px_29px_0_#46AD47]">
             Start Your Project
           </button>
         </div>
@@ -24,7 +24,7 @@ const HeroSection = () => {
           <img
             src={Vehical}
             alt="Vehical"
-            className="max-lg:w-full lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:right-0 pointer-events-none"
+            className="max-lg:w-full max-w-[720px ] lg:absolute lg:top-1/2 lg:-translate-y-1/2 lg:right-0 pointer-events-none"
           />
         </div>
       </div>
@@ -32,7 +32,7 @@ const HeroSection = () => {
     <img
       src={EllipseImg}
       alt="ellipse"
-      className="absolute bottom-[2%] left-[2%] pointer-events-none"
+      className="absolute bottom-[2%] blur-md left-[2%] pointer-events-none"
     />
     <img
       src={EllpiseShadow}

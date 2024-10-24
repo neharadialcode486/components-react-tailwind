@@ -10,7 +10,7 @@ const HeroSection = () => {
               <h1 className="font-bold text-4xl lg:text-[58px] leading-tight text-[#4D4D4D] max-w-[388px]">
                 Lorem ipsum dolor sit
               </h1>
-              <p className="mt-4 text-[#4D4D4D] leading-loose">
+              <p className="mt-4 text-[#4D4D4D] leading-[150%]">
                 Lorem ipsum dolor sit amet consectetur. Semper vitae nullam eget consectetur mi. Vulputate sapien a a bibendum suspendisse quam. Hac posuere eget nam diam velit urna adipiscing diam. Dis velit nam vitae hendrerit at egestas. Tellus velit turpis at sed lorem vitae sed.
               </p>
               <button className="mt-8 px-14 py-[9px]  bg-white text-[#3C278D] border border-[#3C278D] rounded-lg hover:bg-[#3C278D] hover:text-white transition-all">
