@@ -7,21 +7,21 @@ import HeroBottomNineCubeShadow from '../assets/images/svg/hero-9-cube-shadow.sv
 import HeroBottomTopCircle from '../assets/images/svg/hero-9-top-circle.svg'
 const HeroSection = () => {
   return (
-    <div className="relative flex items-center justify-center min-h-screen px-3 bg-[#0B0D09] overflow-hidden">
-    <div className="relative z-10 w-full max-w-[1140px] px-3 mx-auto">
-      <h1 className="text-white font-bold leading-[1.2] lg:text-[128px] md:text-[112px] sm:text-[96px] max-sm:text-[72px]">
+    <div className="min-h-screen px-3 overflow-hidden relative bg-[#0B0D09] flex items-center justify-center">
+    <div className="max-w-[1140px] px-3 relative w-full z-10 mx-auto">
+      <h1 className="text-white text-left font-bold  !leading-[120%] text-9xl max-lg:text-8xl max-md:text-7xl max-sm:text-6xl">
         Build the Future
       </h1>
-      <h1 className="text-white font-bold leading-[1.2] lg:text-[128px] md:text-[112px] sm:text-[96px] max-sm:text-[72px] md:text-right">
+      <h1 className="md:text-right  font-bold text-white  !leading-[120%] text-9xl max-lg:text-8xl max-md:text-7xl max-sm:text-6xl">
         Deliver <span className="text-[#03D79B]">Today.</span>
       </h1>
-      <div className="flex flex-col md:flex-row justify-between gap-6 mt-[58px] max-md:mt-8 items-center">
+      <div className="flex flex-col md:flex-row justify-between items-center gap-6 mt-[58px]">
         <div className="max-w-xs">
-          <p className="text-[#B6B7B5] text-base leading-[1.5] max-md:text-sm">
+          <p className="text-[#B6B7B5] max-lg:text-sm text-base  leading-[1.5] max-md:text-sm">
             Innovative Concrete Logistics - Revolutionizing concrete delivery for commercial and residential projects in Houston, San Antonio, Austin, and Dallas.
           </p>
         </div>
-        <button className="py-[18px] flex items-center max-h-[55px] px-[45px] font-semibold bg-[#46AD47] text-black rounded-[51px] transition-all hover:shadow-[0_7px_29px_0_#46AD47]">
+        <button className="py-[10px] px-[45px] font-semibold bg-[#46AD47] text-black rounded-[51px] max-h-[55px] max-w-[246px] border-0 transition-all hover:shadow-[0_7px_29px_0_#46AD47]">
           Start Your Project
         </button> 
       </div>
