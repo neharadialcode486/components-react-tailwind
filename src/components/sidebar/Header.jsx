@@ -11,7 +11,7 @@ const Header = ({ activeTab, setActiveTab, open, setOpen }) => {
 
     useEffect(() => {
         const savedTab = localStorage.getItem("activeTab");
-        const initialTab = savedTab ? parseInt(savedTab) : 1;
+        const initialTab = savedTab ? parseInt(savedTab) : 0;
         setActiveTab(initialTab);
     }, [setActiveTab]);
     useEffect(() => {
