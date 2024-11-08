@@ -3,33 +3,35 @@ import HeroFirstImg from '../assets/images/png/hero-image.png'
 
 const HeroFirst = () => {
   return (
-    <div className="min-h-screen flex overflow-hidden items-center py-4 lg:py-3">
-    <div className="max-w-[1140px] mx-auto px-3">
-      <div className="flex flex-wrap lg:flex-nowrap max-lg:gap-4">
-        <div className="flex w-full lg:w-6/12 flex-col">
-          <p className="text-[32px] pt-[34px] max-lg:pt-5 leading-[150%] max-lg:text-2xl max-sm:text-xl font-normal text-black leading-150 mb-0">A nice headline</p>
-          <h1 className="text-[64px] max-md:text-5xl max-sm:text-4xl leading-[150%] font-semibold text-black leading-150">Goes here</h1>
-          <p className="text-base max-md:text-sm lg:max-w-[543px] text-gray-700 leading-150 mt-4">
-            Lorem ipsum dolor sit amet consectetur. Velit pulvinar libero porttitor quam sed aliquet. Sodales vulputate elementum arcu donec. Feugiat nibh ullamcorper egestas lectus risus iornare ullamcorper fames. Cursus libero nec facilisis risus malesuada arcu cum.
+    <div className='min-h-screen flex overflow-hidden items-center py-4 lg:py-3'>
+    <div className='max-w-[1140px] max-xl:px-6 px-3 mx-auto'>
+      <div className='flex max-lg:flex-wrap gap-y-6'>
+        <div className='flex w-6/12 justify-center flex-col max-lg:w-full'>
+          <p className='mb-0 font-normal text-black max-lg:text-2xl !leading-[150%] max-sm:text-xl text-3xl'>A nice headline
           </p>
-          <p className="text-base max-md:text-sm lg:max-w-[543px] text-gray-700 leading-150 mt-4">
-            Lorem ipsum dolor sit amet consectetur. Velit pulvinar libero porttitor quam sed aliquet. Sodales vulputate elementum arcu donec.
-          </p>
-          <div className="flex gap-[19px] max-md:gap-4 flex-wrap mt-8">
-            <button className="bg-white text-indigo-900 border border-indigo-900 rounded-lg px-14 py-[11px] font-semibold transition duration-300 hover:bg-indigo-900 hover:text-white max-md:text-sm">
-              Button
-            </button>
-            <button className="bg-white text-indigo-900 border border-indigo-900 rounded-lg px-14 py-[11px] font-semibold transition duration-300 hover:bg-indigo-900 hover:text-white max-md:text-sm">
-              Button
-            </button>
+          <h1 className='font-semibold text-black text-[64px] max-lg:text-5xl !leading-[150%] max-sm:text-4xl'>
+            Goes here</h1>
+          <p className='mb-0 leading-6 max-lg:text-xs text-gray-700 pt-4 leading-150 text-base max-md:text-xs'>Lorem ipsum
+            dolor sit amet
+            consectetur. Velit pulvinar libero porttitor quam sed aliquet. Sodales vulputate elementum arcu donec.
+            Feugiat nibh ullamcorper egestas lectus risus io rnare ullamcorper fames. Cursus libero nec facilisis risus
+            malesuada arcu cum.</p>
+          <p className='mb-0 leading-6 max-lg:text-xs text-gray-700 leading-150 text-base mt-4 max-md:text-xs'>Lorem ipsum
+            dolor sit amet
+            consectetur. Velit pulvinar libero porttitor quam sed aliquet. Sodales vulputate elementum arcu donec.</p>
+          <div className='flex gap-[19px] max-md:gap-4 flex-wrap mt-8'>
+            <button
+              className='hover:white max-md:py-[9px] max-lg:text-[14px] leading-150 max-md:text-sm px-14 py-[11px] hover:bg-white rounded-xl text-white bg-[#3C278D] hover:text-indigo-900 border border-indigo-900 transition duration-300 font-semibold'>Button</button> 
+            <button
+              className='hover:white max-md:py-[9px] max-lg:text-[14px] leading-150 max-md:text-sm px-14 py-[11px] hover:bg-white rounded-xl text-white bg-[#3C278D] hover:text-indigo-900 border border-indigo-900 transition duration-300 font-semibold'>Button</button>
           </div>
         </div>
-        <div className="w-full px-3 lg:w-6/12">
-          <img src={HeroFirstImg}alt="hero" className="w-full lg:min-w-[976px]" />
+        <div className='w-6/12 px-3 max-lg:w-full'>
+          <img src={HeroFirstImg} alt='hero-1-img' className='lg:min-w-[976px] w-full lg:translate-y-[70px]' />
         </div>
       </div>
     </div>
-  </div>
+  </div> 
   )
 }
 

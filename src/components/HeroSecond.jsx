@@ -10,48 +10,47 @@ import HeroTwoBottomRightSecImg from '../assets/images/png/hero-2-bottom-right-s
 
 const HeroSection = () => {
   return (
-    <div className="relative overflow-hidden flex items-center justify-center min-h-screen">
-
-      <div className="absolute top-0 left-0">
-        <div className="relative">
-          <img src={HeroTwoTopLeftFirstImg} alt="hero-2-top-first-img" className="max-md:w-1/2" />
-          <img src={HeroTwoTopLeftSecImg} alt="hero-2-top-sec-img" className="absolute left-[37%] lg:min-w-[247px] max-md:w-1/2 top-[54%]" />
+    <section class="relative overflow-hidden flex max-sm:px-4 items-center justify-center min-h-screen">
+        <div class="absolute top-0 left-0">
+          <div class="relative">
+            <img src={HeroTwoTopLeftFirstImg} alt="hero-2-top-first-img" class="max-[769px]:w-[57%]"/>
+            <img src={HeroTwoTopLeftSecImg} alt="hero-2-top-sec-img" class="absolute left-[37%] lg:min-w-[247px] max-[769px]:w-[57%] top-[54%]"/>
+          </div>
         </div>
-      </div>
-
-      <div className="absolute top-0 right-0 max-md:right-[-19%] max-sm:right-[-33%]">
-        <div className="relative">
-          <img src={HeroTwoTopRightFirstImg} alt="hero-2-top-first-img" className="max-md:w-1/2" />
-          <img src={HeroTwoTopRightSecImg} alt="hero-2-top-sec-img" className="absolute max-md:w-1/2 lg:min-w-[247px] right-[37%] max-md:right-[67%] top-[54%]" />
+        <div class="absolute top-0 right-0 max-[769px]:right-[-19%] max-sm:right-[-33%]">
+          <div class="relative">
+            <img src={HeroTwoTopRightFirstImg} alt="hero-2-top-first-img" class="max-[769px]:w-1/2"/>
+            <img src={HeroTwoTopRightSecImg} alt="hero-2-top-sec-img" class="absolute right-[37%] top-[54%] max-[769px]:w-[50%] max-[769px]:right-[70%]"/>
+          </div>
         </div>
-      </div>
-
-      <div className="relative z-30 flex flex-col items-center justify-center mx-auto w-full max-w-[538px]">
-        <p className="text-center font-normal text-black text-[32px] leading-[150%] mb-0">A nice headline</p>
-        <h1 className="font-semibold text-center text-[64px] leading-[150%] mb-2">Goes here</h1>
-        <p className="text-center text-[#4D4D4D] max-w-[538px] mx-auto text-[16px] leading-[150%]">
-          Lorem ipsum dolor sit amet consectetur. Velit pulvinar libero porttitor quam sed aliquet. Sodales vulputate elementum arcu donec. Feugiat nibh ullamcorper egestas lectus risus ornare ullamcorper fames. Cursus libero nec facilisis risus malesuada arcu cum.
-        </p>
-        <div className="flex gap-6 justify-center flex-wrap mt-[30px]">
-          <button className="py-[11px] px-[56px] bg-white font-semibold text-[#3C278D] border border-[#3C278D] rounded-[12px] hover:bg-[#3C278D] hover:text-white transition-all duration-300">Button</button>
-          <button className="py-[11px] px-[56px] bg-white font-semibold text-[#3C278D] border border-[#3C278D] rounded-[12px] hover:bg-[#3C278D] hover:text-white transition-all duration-300">Button</button>
+        <div class="relative z-30 flex flex-col items-center justify-center mx-auto w-full md:px-4 lg:px-0 max-w-[538px]">
+          <p class="text-center font-normal text-black text-[32px] max-sm:text-xl max-[769px]:text-2xl !leading-[150%] mb-0">A nice headline</p>
+          <h1 class="font-semibold text-center text-[64px] max-[769px]:text-[52px] max-sm:text-[48px] leading-[150%] mb-2">Goes here</h1>
+          <p class="text-center text-[#4D4D4D] max-w-[538px] mx-auto text-[16px] max-sm:text-xs max-[769px]:text-sm !leading-[150%]">Lorem ipsum dolor sit amet consectetur. Velit pulvinar libero porttitor quam sed aliquet. Sodales vulputate elementum arcu donec. Feugiat nibh ullamcorper egestas lectus risus ornare ullamcorper fames. Cursus libero nec facilisis risus malesuada arcu cum.</p>
+          <div class="flex gap-6 max-sm:gap-4 justify-center flex-wrap mt-[30px]">
+            <button
+            class="hover:white max-lg:text-[14px] leading-150 max-md:text-smtext-white px-14 py-[11px] hover:bg-white rounded-xl text-white bg-indigo-900 hover:text-indigo-900 border border-indigo-900 transition duration-300 font-semibold">
+            Button
+        </button>
+        <button
+                class="hover:white max-lg:text-[14px] leading-150 max-md:text-smtext-white px-14 py-[11px] hover:bg-white rounded-xl text-white bg-indigo-900 hover:text-indigo-900 border border-indigo-900 transition duration-300 font-semibold">
+                Button
+            </button>
+                </div>
         </div>
-      </div>
-
-      <div className="absolute bottom-[6px] left-0">
-        <div className="relative">
-          <img src={HeroTwoBottomLeftFirstImg} alt="hero-2-top-first-img" className="max-md:w-1/2" />
-          <img src={HeroTwoBottomLeftSecImg} alt="hero-2-top-sec-img" className="absolute left-[37%] lg:min-w-[313px] max-md:w-1/2 bottom-[54%]" />
+        <div class="absolute bottom-[6px] left-0">
+          <div class="relative">
+            <img src={HeroTwoBottomLeftFirstImg} alt="hero-2-top-first-img" class="max-[769px]:w-[57%]"/>
+            <img src={HeroTwoBottomLeftSecImg} alt="hero-2-top-sec-img" class="absolute left-[37%] lg:min-w-[313px] max-[769px]:w-[57%] bottom-[54%]"/>
+          </div>
         </div>
-      </div>
-
-      <div className="absolute bottom-0 max-md:right-[-16%] max-sm:right-[-32%] right-[34px]">
-        <div className="relative">
-          <img src={HeroTwoBottomRightSecImg} alt="hero-2-top-first-img" className="max-md:w-1/2" />
-          <img src={HeroTwoBottomRightFirstImg} alt="hero-2-top-sec-img" className="absolute right-[37%] max-md:right-[70%] max-md:w-1/2 bottom-[54%]" />
+        <div class="absolute bottom-0 max-[769px]:right-[-4%] max-sm:right-[-27%] right-[34px]">
+          <div class="relative">
+            <img src={HeroTwoBottomRightSecImg} alt="hero-2-top-first-img" class="max-[769px]:w-[70%] max-sm:w-[49%]"/>
+            <img src={HeroTwoBottomRightFirstImg} alt="hero-2-top-sec-img" class="absolute right-[37%] max-[769px]:right-[70%] max-sm:right-[80%] max-[769px]:w-[54%] max-sm:w-[49%] bottom-[54%]"/>
+          </div>
         </div>
-      </div>
-    </div>
+      </section>
   );
 };
 
