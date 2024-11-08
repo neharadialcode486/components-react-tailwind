@@ -7,12 +7,13 @@ import DataSwiper from './DataSwiper';
 
 const SideBar = () => {
     const [activeTab, setActiveTab] = useState(0);
+    const [open, setOpen] = useState(false);
     const Data = ['Requirements', 'Events', 'Career event', 'Activities', 'Masterclasses']
     return (
         <div className='flex justify-between bg-dark-gray'>
-            <Header activeTab={activeTab} setActiveTab={setActiveTab} />
+            <Header activeTab={activeTab} setActiveTab={setActiveTab} open={open} setOpen={setOpen} />
             <div className="bg-off-yellow w-full fixed max-w-[1920px] top-0 flex justify-end left-1/2 -translate-x-1/2 h-[240px]">
-                <img src={plus} alt="plus" className='max-w-[200px] w-full lg:opacity-100 opacity-30' />
+                <img src={plus} alt="plus" className='max-w-[200px] w-full lg:opacity-100 opacity-20' />
             </div>
             <div className="lg:p-8 p-3 relative z-20 w-full sm:w-[83.3%] overflow-hidden">
                 <h2 className='font-bold text-3xl md:text-4xl mt-7 sm:mt-2'>Welcome back, Zareh 👋🏻</h2>
@@ -68,8 +69,9 @@ const SideBar = () => {
                         <a href="/" className='flex items-center gap-2 font-semibold text-sm duration-300 ease-linear group hover:scale-105 mt-12 w-fit mb-1'>More programmes <Icon className='duration-300 ease-linear group-hover:scale-90' iconName='rightArrowIcon' /></a>
                     </div>
                 </div>
-                <DataSwiper className={activeTab === 1 || activeTab === 3 ? "hidden" : activeTab === 2 ? "mt-20 pt-14" : ""} />
+                <DataSwiper className={activeTab === 1 || activeTab === 3 ? "hidden" : activeTab === 2 ? "xl:mt-20 xl:pt-14" : ""} />
             </div>
+            {open && <div onClick={() => setOpen(!open)} className='bg-black opacity-70 z-30 fixed left-0 top-0 min-h-screen w-full'></div>}
         </div>
     )
 }

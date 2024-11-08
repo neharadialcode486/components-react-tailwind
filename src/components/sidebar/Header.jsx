@@ -5,10 +5,10 @@ import { TABS_DATA } from "../../utils/Helper";
 import Icon from '../common/Icons';
 import user from "../../assets/images/svg/user-icon.svg";
 
-const Header = ({ activeTab, setActiveTab }) => {
+const Header = ({ activeTab, setActiveTab, open, setOpen }) => {
     const { tabName } = useParams();
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1920);
-    const [open, setOpen] = useState(false);
+
     useEffect(() => {
         const savedTab = localStorage.getItem("activeTab");
         const initialTab = parseInt(savedTab);
@@ -18,7 +18,7 @@ const Header = ({ activeTab, setActiveTab }) => {
         const tabIndex = TABS_DATA.findIndex(tab => tab.title.toLowerCase() === tabName?.toLowerCase());
         if (tabIndex !== -1) {
             setActiveTab(tabIndex);
-            localStorage.setItem("activeTab", tabIndex); 
+            localStorage.setItem("activeTab", tabIndex);
         }
     }, [tabName, setActiveTab]);
 
