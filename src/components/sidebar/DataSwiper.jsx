@@ -12,8 +12,8 @@ const DataSwiper = ({ className }) => {
             <div className="flex w-full justify-between mb-6">
                 <h2 className='font-bold text-2xl'>Recommended for you</h2>
                 <div className="flex items-center gap-2 relative">
-                    <Icon className="hover:scale-95 swiper-button-next !top-auto !relative !right-auto !w-8 !h-8 cursor-pointer hover:bg-white duration-300 ease-linear hover:border-off-yellow rounded-full border border-[#BBBAB6]" iconName='rightArrowIcon' />
-                    <Icon className="hover:scale-95 swiper-button-prev !top-auto !relative !left-auto rotate-180 cursor-pointer !w-8 !h-8 hover:bg-white duration-300 ease-linear hover:border-off-yellow rounded-full border border-[#BBBAB6]" iconName='rightArrowIcon' />
+                    <Icon className="hover:scale-95 !mt-0 swiper-button-next !top-auto !relative !right-auto !w-8 !h-8 cursor-pointer hover:bg-white duration-300 ease-linear hover:border-off-yellow rounded-full border border-[#BBBAB6]" iconName='rightArrowIcon' />
+                    <Icon className="hover:scale-95 !mt-0 swiper-button-prev !top-auto !relative !left-auto rotate-180 cursor-pointer !w-8 !h-8 hover:bg-white duration-300 ease-linear hover:border-off-yellow rounded-full border border-[#BBBAB6]" iconName='rightArrowIcon' />
                 </div>
             </div>
             <div className=" w-full">

@@ -6,9 +6,9 @@ import Icon from '../common/Icons';
 import user from "../../assets/images/svg/user-icon.svg";
 
 const Header = ({ activeTab, setActiveTab, open, setOpen }) => {
+
     const { tabName } = useParams();
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1920);
-
     useEffect(() => {
         const savedTab = localStorage.getItem("activeTab");
         const initialTab = savedTab ? parseInt(savedTab) : 0;
@@ -21,17 +21,14 @@ const Header = ({ activeTab, setActiveTab, open, setOpen }) => {
             localStorage.setItem("activeTab", tabIndex);
         }
     }, [tabName, setActiveTab]);
-
     useEffect(() => {
         const handleResize = () => setIsLargeScreen(window.innerWidth >= 1920);
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
     }, []);
-
     useEffect(() => {
         document.body.classList.toggle("overflow-hidden", open && window.innerWidth < 640);
     }, [open]);
-
     const handleClick = (idx, title) => {
         setActiveTab(idx);
         localStorage.setItem("activeTab", idx);
@@ -41,11 +38,11 @@ const Header = ({ activeTab, setActiveTab, open, setOpen }) => {
 
     return (
         <div className={`md:px-[120px] absolute sm:relative z-[200] duration-300 ease-linear sm:px-24 min-h-screen ${open ? "left-0" : "-left-full"}`}>
-            <div className="top-0 sm:max-w-[192px] md:max-w-[240px] max-w-[240px] w-full flex flex-col justify-between sm:fixed min-h-screen bg-black sm:p-2 p-5 md:p-5"
+            <div className="top-0 sm:max-w-[192px] md:max-w-[240px] max-w-[240px] w-full flex flex-col justify-between sm:fixed min-h-screen bg-black p-4 md:p-5"
                 style={{ left: isLargeScreen ? 'calc((100vw - 1920px) / 2)' : '0%' }}>
                 <div className="flex flex-col">
-                    <a href="/" className="w-fit mx-auto mt-6"><img src={logo} alt="logo" /></a>
-                    <div className="flex flex-col mt-16 gap-8">
+                    <a href="/" className="w-fit mx-2 md:mx-auto mt-6"><img src={logo} alt="logo" /></a>
+                    <div className="flex flex-col mt-12 md:mt-16 gap-8">
                         {TABS_DATA.map((tab, idx) => (
                             <div key={idx} className="flex items-center gap-4">
                                 <span className={`w-1.5 h-1.5 rounded-full ${activeTab === idx ? "bg-off-yellow" : "bg-black"}`} />

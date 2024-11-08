@@ -6,34 +6,40 @@ import { EVENTS_DATA } from '../../utils/Helper';
 import DataSwiper from './DataSwiper';
 
 const SideBar = () => {
+
     const [activeTab, setActiveTab] = useState(0);
     const [open, setOpen] = useState(false);
     const Data = ['Requirements', 'Events', 'Career event', 'Activities', 'Masterclasses']
+
     return (
         <div className='flex justify-between bg-dark-gray'>
             <Header activeTab={activeTab} setActiveTab={setActiveTab} open={open} setOpen={setOpen} />
             <div className="bg-off-yellow w-full fixed max-w-[1920px] top-0 flex justify-end left-1/2 -translate-x-1/2 h-[240px]">
                 <img src={plus} alt="plus" className='max-w-[200px] w-full lg:opacity-100 opacity-20' />
             </div>
-            <div className="lg:p-8 p-3 relative z-20 w-full sm:w-[83.3%] overflow-hidden">
-                <h2 className='font-bold text-3xl md:text-4xl mt-7 sm:mt-2'>Welcome back, Zareh 👋🏻</h2>
-                <p className='mt-5 font-normal text-base'>Below you find your upcoming events, enrolled programmes and progress</p>
-                <div className="mt-12 xl:flex-row flex-col flex justify-between gap-4">
+            <div className="lg:p-8 p-4 relative z-20 w-full sm:w-[83.3%] overflow-hidden">
+                <h2 className='font-bold text-2xl md:text-4xl mt-7 sm:mt-2'>Welcome back, Zareh 👋🏻</h2>
+                <p className='sm:mt-5 mt-2 font-normal text-base'>Below you find your upcoming events, enrolled programmes and progress</p>
+                <div className="sm:mt-12 mt-8 xl:flex-row flex-col flex justify-between gap-4">
                     <div className={`rounded-lg w-full xl:w-[58.7%] bg-white p-3 lg:p-8 ${activeTab === 2 || activeTab === 3 ? "hidden" : ""}`}>
                         <h2 className='font-bold text-2xl mb-4 lg:mb-9'>You have 3 upcoming events</h2>
                         {EVENTS_DATA.map((items, idx) => (
-                            <div key={idx} className="flex justify-between items-center mt-4 w-full">
+                            <div key={idx} className="flex justify-between sm:items-center mt-4 w-full">
                                 <div className="flex flex-col items-center justify-center bg-black md:w-20 md:h-20 sm:h-16 w-14 h-14 sm:w-16 rounded-full">
                                     <p className='font-black text-lg sm:text-xl md:text-3xl text-white md:leading-7'>{items.date}</p>
                                     <p className='font-light text-xs sm:text-sm md:text-lg text-white md:leading-5 capitalize'>{items.months}</p>
                                 </div>
                                 <div className="flex flex-col max-w-[444px] w-8/12 lg:w-full">
                                     <p className='font-bold text-sm md:text-base'>{items.title}</p>
-                                    <div className="flex items-center mt-2">
-                                        <Icon iconName='clockIcon' />
-                                        <p className='font-normal text-xs ml-1'>{items.time}</p>
-                                        <Icon className=' ml-2 sm:ml-4' iconName='locationIcon' />
-                                        <p className='font-normal text-xs ml-1'>{items.location}</p>
+                                    <div className="flex flex-col sm:flex-row sm:items-center mt-2">
+                                        <div className="flex items-center">
+                                            <Icon iconName='clockIcon' />
+                                            <p className='font-normal text-xs ml-1'>{items.time}</p>
+                                        </div>
+                                        <div className="flex items-center mt-1">
+                                            <Icon className='sm:ml-4' iconName='locationIcon' />
+                                            <p className='font-normal text-xs ml-1'>{items.location}</p>
+                                        </div>
                                     </div>
                                 </div>
                                 <a href="/" className='w-8 h-8 justify-center items-center flex hover:bg-dark-gray duration-300 ease-linear hover:border-off-yellow group rounded-full border border-dark-gray'><Icon className='duration-300 ease-linear group-hover:scale-90' iconName='rightArrowIcon' /></a>
