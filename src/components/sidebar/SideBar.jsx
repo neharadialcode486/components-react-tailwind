@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Header from './Header'
 import plus from "../../assets/images/webp/plus-iocns.webp";
 import Icon from '../common/Icons';
@@ -6,10 +6,11 @@ import { EVENTS_DATA } from '../../utils/Helper';
 import DataSwiper from './DataSwiper';
 
 const SideBar = () => {
+    const [activeTab, setActiveTab] = useState(0);
     const Data = ['Requirements', 'Events', 'Career event', 'Activities', 'Masterclasses']
     return (
         <div className='flex justify-between bg-dark-gray'>
-            <Header />
+            <Header activeTab={activeTab} setActiveTab={setActiveTab} />
             <div className="bg-off-yellow w-full fixed max-w-[1920px] top-0 flex justify-end left-1/2 -translate-x-1/2 h-[240px]">
                 <img src={plus} alt="plus" className='max-w-[200px] w-full lg:opacity-100 opacity-30' />
             </div>
@@ -17,7 +18,7 @@ const SideBar = () => {
                 <h2 className='font-bold text-3xl md:text-4xl mt-7 sm:mt-2'>Welcome back, Zareh 👋🏻</h2>
                 <p className='mt-5 font-normal text-base'>Below you find your upcoming events, enrolled programmes and progress</p>
                 <div className="mt-12 xl:flex-row flex-col flex justify-between gap-4">
-                    <div className="rounded-lg w-full xl:w-[58.7%] bg-white p-3 lg:p-8">
+                    <div className={`rounded-lg w-full xl:w-[58.7%] bg-white p-3 lg:p-8 ${activeTab === 2 || activeTab === 3 ? "hidden" : ""}`}>
                         <h2 className='font-bold text-2xl mb-4 lg:mb-9'>You have 3 upcoming events</h2>
                         {EVENTS_DATA.map((items, idx) => (
                             <div key={idx} className="flex justify-between items-center mt-4 w-full">
@@ -39,7 +40,7 @@ const SideBar = () => {
                         ))}
                         <a href="/" className='flex items-center gap-2 font-semibold text-sm duration-300 ease-linear group hover:scale-105 mt-12 w-fit mb-5 md:mb-14'>More events <Icon className='duration-300 ease-linear group-hover:scale-90' iconName='rightArrowIcon' /></a>
                     </div>
-                    <div className="rounded-lg w-full xl:w-[41.3%] bg-white p-3 lg:p-8">
+                    <div className={`rounded-lg w-full xl:w-[41.3%] bg-white p-3 lg:p-8 ${activeTab === 1 || activeTab === 2 ? "hidden" : activeTab === 3 ? "xl:!w-[50%]" : ""}`}>
                         <h2 className='font-bold text-2xl mb-4 lg:mb-9'>Your programmes</h2>
                         {[...Array(2)].map((_, index) => (
                             <div key={index} className="border border-dark-gray rounded-lg py-8 px-6 mt-4 relative overflow-hidden">
@@ -67,7 +68,7 @@ const SideBar = () => {
                         <a href="/" className='flex items-center gap-2 font-semibold text-sm duration-300 ease-linear group hover:scale-105 mt-12 w-fit mb-1'>More programmes <Icon className='duration-300 ease-linear group-hover:scale-90' iconName='rightArrowIcon' /></a>
                     </div>
                 </div>
-                <DataSwiper />
+                <DataSwiper className={activeTab === 1 || activeTab === 3 ? "hidden" : activeTab === 2 ? "mt-20 pt-14" : ""} />
             </div>
         </div>
     )

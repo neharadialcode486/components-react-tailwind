@@ -5,16 +5,22 @@ import { TABS_DATA } from "../../utils/Helper";
 import Icon from '../common/Icons';
 import user from "../../assets/images/svg/user-icon.svg";
 
-const Header = () => {
+const Header = ({ activeTab, setActiveTab }) => {
     const { tabName } = useParams();
-    const [activeTab, setActiveTab] = useState(0);
     const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1920);
     const [open, setOpen] = useState(false);
-
+    useEffect(() => {
+        const savedTab = localStorage.getItem("activeTab");
+        const initialTab = parseInt(savedTab);
+        setActiveTab(initialTab);
+    }, [setActiveTab]);
     useEffect(() => {
         const tabIndex = TABS_DATA.findIndex(tab => tab.title.toLowerCase() === tabName?.toLowerCase());
-        setActiveTab(tabIndex !== -1 ? tabIndex : 0);
-    }, [tabName]);
+        if (tabIndex !== -1) {
+            setActiveTab(tabIndex);
+            localStorage.setItem("activeTab", tabIndex); 
+        }
+    }, [tabName, setActiveTab]);
 
     useEffect(() => {
         const handleResize = () => setIsLargeScreen(window.innerWidth >= 1920);
@@ -28,6 +34,7 @@ const Header = () => {
 
     const handleClick = (idx, title) => {
         setActiveTab(idx);
+        localStorage.setItem("activeTab", idx);
         window.history.pushState(null, '', `/${title.toLowerCase()}`);
         setOpen(false);
     };
