@@ -5,24 +5,15 @@
     font-family: "Inter", sans-serif;
 }
 
-.bg-img {
+.bg-img-1 {
     background-image: url('./assets/image/webp/sec-1-bg.webp');
 }
 
-.front {
-    transform: translateY(-4px);
-    transition: all 400ms linear;
-}
-
-.pushable:active .front {
-    transform: translateY(0px);
-    transition: all 0ms linear;
-}
-
 /* About Third css*/
-.bg-gradient {
+.contact-button-2{
     background: linear-gradient(98.04deg, #4F7566 3.36%, #A2AF7A 100%);
 }
-.bg-sec4-img{
+
+.bg-img-4{
     background-image: url(./assets/image/webp/sec-4-bg.webp);
 }
