@@ -1,19 +1,64 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
 * {
     font-family: "Inter", sans-serif !important;
+    text-decoration: none !important;
+    font-family: "Inter", sans-serif !important;
 }
+/* footer-2=========== */
+.icon-hover-2 path,
+rect {
+    transition: all 300ms linear;
+}
+
+.icon-hover-2:hover path {
+    fill: #F7B103;
+}
+
+.icon-hover-2:hover rect {
+    fill: black;
+}
+
+/* ===========footer-3 */
 
 .footer-bg-3 {
     background-image: url(./assets/image/webp/bg-footer-3.webp);
     background-repeat: no-repeat;
     background-position: center;
 }
-.common-hover-3:hover{
+
+.common-hover:hover {
     color: #38ADB5;
 }
-.common-hover-4:hover{
-    color: #EB0055;
+
+.letter-spacing {
+    letter-spacing: 5%;
 }
-.common-hover-5:hover{
-    color: #FFFFFF;
+
+.icon-hover path,
+rect {
+    transition: all 300ms linear;
 }
+
+.icon-hover-3:hover path {
+    fill: #38ADB5;
+}
+
+.icon-hover-3:hover rect {
+    fill: #fff;
+}
+
+/*  ===========footer-4 */
+.icon-hover-4 path,
+rect {
+    transition: all 300ms linear;
+}
+
+.icon-hover-4:hover path {
+    fill: #EB0055;
+}
+
+.icon-hover-4:hover rect {
+    fill: #fff;
+}
+/* --------footer-5 */

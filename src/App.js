@@ -5,8 +5,6 @@ import FooterFour from './components/FooterFour';
 import { FooterSecond } from './components/FooterSecond';
 import FooterThird from './components/FooterThird';
 
-
-
 function App() {
   return (
     <>

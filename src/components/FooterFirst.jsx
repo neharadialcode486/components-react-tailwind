@@ -1,66 +1,96 @@
 import React from 'react'
-import FooterFirstTwitter from '../assets/image/svg/twiteer-icon.svg'
-import FacebookIcon from '../assets/image/svg/facebook-icon.svg'
-import BeIcon from '../assets/image/svg/be-icon.svg'
 
 export const FooterFirst = () => {
     return (
-        <footer className="flex max-w-[1920px] mx-auto flex-col items-center justify-center min-h-screen">
-            <div className="container mx-auto px-6 max-w-[1140px]">
-                <div className="flex flex-wrap -mx-3 justify-between">
-                    <div className="lg:w-3/12 md:w-6/12 w-full md:mt-0 mt-10">
-                        <div
-                            className="bg-logo bg-[#C5C2C2] w-[87px] h-[48px] cursor-pointer flex items-center justify-center mx-auto md:mx-0 mb-6">
-                            <p className="font-medium text-xl text-[#3C278D]">Logo</p>
-                        </div>
-                        <p className="text-gray-500 max-w-[221px]  mx-auto md:mx-0 md:text-left text-center">Discover Stellar
-                            blockchain's unrivaled
-                            speed, security, & scalability with Volag. Revolutionize finance.</p>
-                    </div>
-                    <div className="lg:w-2/12 w-6/12 md:text-left text-center max-lg:mt-10">
-                        <p className="font-medium mb-4 ">Quick Links</p>
-                        <ul className="flex flex-col gap-[13.5px] text-gray-700  ">
-                            <li><a href="/" className="hover:text-[#3C278D]">Home</a></li>
-                            <li><a href="/" className="hover:text-[#3C278D]">About</a></li>
-                            <li><a href="/" className="hover:text-[#3C278D]">Community</a></li>
-                            <li><a href="/" className="hover:text-[#3C278D]">RoadMap</a></li>
-                            <li><a href="/" className="hover:text-[#3C278D]">Faqs</a></li>
+        <div id='footer' className='flex flex-col items-center justify-center min-h-screen'>
+        <div className='container mx-auto px-3 max-w-[1140px] max-[1200px]:px-5'>
+            <div className='flex flex-wrap justify-between'>
+                <div className='lg:w-3/12 md:w-6/12 w-full md:mt-0 mt-12 flex flex-col '>
+                    <a href='#footer'
+                        className='bg-logo bg-[#C5C2C2]  w-[87px] h-[48px] cursor-pointer flex items-center justify-center mb-6'>
+                        <p className='font-semibold text-base text-[#3C278D]'>Logo</p>
+                    </a>
+                    <p className='text-gray-500 max-w-[221px]'>Discover Stellar
+                        blockchain's unrivaled
+                        speed, security, & scalability with Volag. Revolutionize finance.</p>
+                </div>
+                <div className='lg:w-2/12 w-6/12 max-md:mt-12 flex pr-3 lg:pl-1.5'>
+                    <div>
+                        <p className='font-normal mb-4'>Quick Links</p>
+                        <ul className='flex flex-col gap-4 text-[#4D4D4D]'>
+                            <li><a href='#footer' className='hover:text-[#3C278D] leading-[150%]'>Home</a></li>
+                            <li><a href='#footer' className='hover:text-[#3C278D] leading-[150%]'>About</a></li>
+                            <li><a href='#footer' className='hover:text-[#3C278D] leading-[150%]'>Community</a></li>
+                            <li><a href='#footer' className='hover:text-[#3C278D] leading-[150%]'>RoadMap</a></li>
+                            <li><a href='#footer' className='hover:text-[#3C278D] leading-[150%]'>Faqs</a></li>
                         </ul>
                     </div>
-                    <div className="lg:w-2/12 w-6/12 max-lg:mt-10 md:text-left text-center">
-                        <p className="font-medium mb-4 ">Links</p>
-                        <ul className="flex flex-col gap-[13.5px] text-gray-700 ">
-                            <li><a href="/" className="hover:text-[#3C278D]">Terms & Conditions</a></li>
-                            <li><a href="/" className="hover:text-[#3C278D]">Privacy Policy</a></li>
+                </div>
+                <div className='lg:w-2/12 w-6/12 lg:mt-0 mt-12 flex xl:px-3 pl-3'>
+                    <div>
+                        <p className='font-normal mb-4 '>Links</p>
+                        <ul className='flex flex-col gap-4 text-[#4D4D4D]'>
+                            <li><a href='#footer' className='hover:text-[#3C278D] '>Terms & Conditions</a></li>
+                            <li><a href='#footer' className='hover:text-[#3C278D]'>Privacy Policy</a></li>
                         </ul>
                     </div>
-                    <div className="lg:w-4/12 md:w-6/12 w-full max-lg:mt-10">
-                        <p className="font-medium mb-4 text-center md:text-left">Get in Touch</p>
+                </div>
+                <div className='lg:w-4/12 md:w-6/12 w-full flex lg:pl-2'>
+                    <div className='max-w-[327px] w-full mt-12 lg:mt-0'>
+                        <p className='font-normal mb-4 '>Get in Touch</p>
                         <form
-                            className="mail bg-[#EAE7F2] rounded-xl flex justify-between items-center p-2 mb-4 max-w-[326px] md:ml-0 mx-auto ">
-                            <input type="email" placeholder="Type Your Mail"
-                                className="email placeholder:text-black bg-none outline-none sm:mr-5 border-none focus:outline-none flex-grow bg-transparent p-2 pl-1" />
+                            className='mail bg-[#EAE7F2] rounded-xl flex justify-between items-center p-1 pl-2.5 pr-1 mb-4 max-w-[326px] md:ml-0'>
+                            <input type='email' placeholder='Type Your Mail'
+                                className='email max-w-[206px] w-full placeholder:text-black bg-none outline-none border-none focus:outline-none flex-grow bg-transparent'
+                                required/>
                             <button
-                                className="min-w-[84px] min-h-[39px] text-white border-2 border-transparent bg-[#3C278D] rounded-xl leading-[121%] hover:bg-white hover:border-[#3C278D] hover:text-[#3C278D] transition-all duration-300">Search</button>
+                                className='py-[8px] px-[14px] text-white border-2 border-transparent bg-[#3C278D] rounded-xl leading-[121%] hover:bg-white hover:border-[#3C278D] hover:text-[#3C278D] transition-all duration-300'>Search</button>
                         </form>
-                        <a href="/" className="hover:text-[#3C278D] text-black block text-center md:text-left">Follow us now</a>
-                        <div className="flex justify-center lg:justify-start gap-2 mt-4">
-                            <a className=' hover:scale-[1.2] transition-all duration-300' href="https://x.com/home?lang=en" target="_blank"><svg width="35" height="33" viewBox="0 0 35 33" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M17.7935 0.668079C8.35946 0.668079 0.711872 7.84739 0.711872 16.7038C0.711872 25.5601 8.35946 32.7394 17.7935 32.7394C27.2275 32.7394 34.8751 25.5601 34.8751 16.7038C34.8751 7.84739 27.2275 0.668079 17.7935 0.668079ZM24.7418 13.804C24.7489 13.9409 24.7507 14.0779 24.7507 14.2116C24.7507 18.3875 21.3682 23.1999 15.1797 23.1999C13.351 23.2027 11.5604 22.7097 10.0231 21.7801C10.2847 21.8101 10.5534 21.8218 10.8256 21.8218C12.4021 21.8218 13.8523 21.319 15.0035 20.4705C14.3019 20.4575 13.6222 20.2395 13.0589 19.8466C12.4956 19.4538 12.0769 18.9058 11.8612 18.2789C12.365 18.3689 12.884 18.35 13.379 18.2238C12.6175 18.0793 11.9327 17.6919 11.4408 17.1275C10.9488 16.563 10.6799 15.8562 10.6797 15.1269V15.0885C11.1334 15.324 11.653 15.4677 12.2046 15.4844C11.4907 15.0383 10.9854 14.353 10.7919 13.5687C10.5984 12.7844 10.7314 11.9603 11.1637 11.265C12.0088 12.2405 13.0627 13.0385 14.2572 13.6074C15.4517 14.1763 16.7601 14.5033 18.0978 14.5673C17.9277 13.8897 18.0009 13.1783 18.306 12.5437C18.611 11.9091 19.1309 11.3869 19.7847 11.0583C20.4385 10.7297 21.1897 10.6131 21.9214 10.7266C22.6531 10.8401 23.3243 11.1773 23.8308 11.6859C24.5838 11.5461 25.3058 11.2868 25.966 10.9192C25.715 11.6511 25.1896 12.2725 24.4874 12.6681C25.1543 12.5927 25.8056 12.4244 26.4197 12.1687C25.9686 12.8032 25.4004 13.357 24.7418 13.804Z" fill="#3C278D" />
-                            </svg>
+                        <p className=' text-black block '>Follow us
+                            now</p>
+                        <div className='flex gap-4 mt-4'>
+                            <a className='hover:scale-[1.1] transition-all duration-[400ms]'
+                                href='https://x.com/home?lang=en' target='_blank'><svg className='icon-hover' width='35'
+                                    height='33' viewBox='0 0 35 33' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                    <path
+                                        d='M17.7935 0.668079C8.35946 0.668079 0.711872 7.84739 0.711872 16.7038C0.711872 25.5601 8.35946 32.7394 17.7935 32.7394C27.2275 32.7394 34.8751 25.5601 34.8751 16.7038C34.8751 7.84739 27.2275 0.668079 17.7935 0.668079ZM24.7418 13.804C24.7489 13.9409 24.7507 14.0779 24.7507 14.2116C24.7507 18.3875 21.3682 23.1999 15.1797 23.1999C13.351 23.2027 11.5604 22.7097 10.0231 21.7801C10.2847 21.8101 10.5534 21.8218 10.8256 21.8218C12.4021 21.8218 13.8523 21.319 15.0035 20.4705C14.3019 20.4575 13.6222 20.2395 13.0589 19.8466C12.4956 19.4538 12.0769 18.9058 11.8612 18.2789C12.365 18.3689 12.884 18.35 13.379 18.2238C12.6175 18.0793 11.9327 17.6919 11.4408 17.1275C10.9488 16.563 10.6799 15.8562 10.6797 15.1269V15.0885C11.1334 15.324 11.653 15.4677 12.2046 15.4844C11.4907 15.0383 10.9854 14.353 10.7919 13.5687C10.5984 12.7844 10.7314 11.9603 11.1637 11.265C12.0088 12.2405 13.0627 13.0385 14.2572 13.6074C15.4517 14.1763 16.7601 14.5033 18.0978 14.5673C17.9277 13.8897 18.0009 13.1783 18.306 12.5437C18.611 11.9091 19.1309 11.3869 19.7847 11.0583C20.4385 10.7297 21.1897 10.6131 21.9214 10.7266C22.6531 10.8401 23.3243 11.1773 23.8308 11.6859C24.5838 11.5461 25.3058 11.2868 25.966 10.9192C25.715 11.6511 25.1896 12.2725 24.4874 12.6681C25.1543 12.5927 25.8056 12.4244 26.4197 12.1687C25.9686 12.8032 25.4004 13.357 24.7418 13.804Z'
+                                        fill='#3C278D' />
+                                </svg>
                             </a>
-                            <a className=' hover:scale-[1.2] transition-all duration-300' href="https://www.facebook.com/" target="_blank"><img src={FacebookIcon} alt="facebook" /></a>
-                            <div className="hover:scale-[1.2] transition-all duration-300 bg-[#3c278d] rounded-full w-[34px] h-[34px] flex items-center cursor-pointer justify-center">
-                                <a href="/"><img src={BeIcon} alt="be-icon" /></a>
-                            </div>
+                            <a className='hover:scale-[1.1] transition-all duration-[400ms]'
+                                href='https://www.facebook.com/' target='_blank'><svg className='icon-hover' width='35'
+                                    height='33' viewBox='0 0 37 34' fill='none' xmlns='http://www.w3.org/2000/svg'>
+                                    <path
+                                        d='M18.3818 0C8.52845 0 0.54097 7.49839 0.54097 16.7484C0.54097 25.9984 8.52845 33.4968 18.3818 33.4968C28.2351 33.4968 36.2226 25.9984 36.2226 16.7484C36.2226 7.49839 28.2351 0 18.3818 0ZM22.6078 11.5738H19.9261C19.6083 11.5738 19.2552 11.9664 19.2552 12.488V14.3059H22.6097L22.1023 16.8984H19.2552V24.6812H16.0904V16.8984H13.2191V14.3059H16.0904V12.7811C16.0904 10.5934 17.7072 8.81558 19.9261 8.81558H22.6078V11.5738Z'
+                                        fill='#3C278D' />
+                                </svg>
+                            </a>
+                            <a href='#footer' className='hover:scale-[1.1] transition-all duration-[400ms]'>
+                                <svg width='34' height='32' viewBox='0 0 34 32' fill='none'
+                                    xmlns='http://www.w3.org/2000/svg'>
+                                    <g clip-path='url(#clip0_5012_26)'>
+                                        <ellipse cx='16.5' cy='16' rx='16.5' ry='16' fill='#3C278D' />
+                                        <path
+                                            d='M8.40909 21V9.36364H12.4773C13.2879 9.36364 13.9564 9.50379 14.483 9.78409C15.0095 10.0606 15.4015 10.4337 15.6591 10.9034C15.9167 11.3693 16.0455 11.8864 16.0455 12.4545C16.0455 12.9545 15.9564 13.3674 15.7784 13.6932C15.6042 14.0189 15.3731 14.2765 15.0852 14.4659C14.8011 14.6553 14.4924 14.7955 14.1591 14.8864V15C14.5152 15.0227 14.8731 15.1477 15.233 15.375C15.5928 15.6023 15.8939 15.928 16.1364 16.3523C16.3788 16.7765 16.5 17.2955 16.5 17.9091C16.5 18.4924 16.3674 19.017 16.1023 19.483C15.8371 19.9489 15.4186 20.3182 14.8466 20.5909C14.2746 20.8636 13.5303 21 12.6136 21H8.40909ZM9.81818 19.75H12.6136C13.5341 19.75 14.1875 19.572 14.5739 19.2159C14.964 18.8561 15.1591 18.4205 15.1591 17.9091C15.1591 17.5152 15.0587 17.1515 14.858 16.8182C14.6572 16.4811 14.3712 16.2121 14 16.0114C13.6288 15.8068 13.1894 15.7045 12.6818 15.7045H9.81818V19.75ZM9.81818 14.4773H12.4318C12.8561 14.4773 13.2386 14.3939 13.5795 14.2273C13.9242 14.0606 14.197 13.8258 14.3977 13.5227C14.6023 13.2197 14.7045 12.8636 14.7045 12.4545C14.7045 11.9432 14.5265 11.5095 14.1705 11.1534C13.8144 10.7936 13.25 10.6136 12.4773 10.6136H9.81818V14.4773ZM22.2926 21.1818C21.4517 21.1818 20.7263 20.9962 20.1165 20.625C19.5104 20.25 19.0426 19.7273 18.7131 19.0568C18.3873 18.3826 18.2244 17.5985 18.2244 16.7045C18.2244 15.8106 18.3873 15.0227 18.7131 14.3409C19.0426 13.6553 19.5009 13.1212 20.0881 12.7386C20.679 12.3523 21.3684 12.1591 22.1562 12.1591C22.6108 12.1591 23.0597 12.2348 23.5028 12.3864C23.946 12.5379 24.3494 12.7841 24.7131 13.125C25.0767 13.4621 25.3665 13.9091 25.5824 14.4659C25.7983 15.0227 25.9062 15.7083 25.9062 16.5227V17.0909H19.179V15.9318H24.5426C24.5426 15.4394 24.4441 15 24.2472 14.6136C24.054 14.2273 23.7775 13.9223 23.4176 13.6989C23.0616 13.4754 22.6411 13.3636 22.1562 13.3636C21.6222 13.3636 21.16 13.4962 20.7699 13.7614C20.3835 14.0227 20.0862 14.3636 19.8778 14.7841C19.6695 15.2045 19.5653 15.6553 19.5653 16.1364V16.9091C19.5653 17.5682 19.679 18.1269 19.9062 18.5852C20.1373 19.0398 20.4574 19.3864 20.8665 19.625C21.2756 19.8598 21.7509 19.9773 22.2926 19.9773C22.6449 19.9773 22.9631 19.928 23.2472 19.8295C23.535 19.7273 23.7831 19.5758 23.9915 19.375C24.1998 19.1705 24.3608 18.9167 24.4744 18.6136L25.7699 18.9773C25.6335 19.4167 25.4044 19.803 25.0824 20.1364C24.7604 20.4659 24.3627 20.7235 23.8892 20.9091C23.4157 21.0909 22.8835 21.1818 22.2926 21.1818Z'
+                                            fill='white' />
+                                    </g>
+                                    <defs>
+                                        <clipPath id='clip0_5012_26'>
+                                            <rect width='34.01' height='31.92' fill='white' />
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+
+                            </a>
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div className="h-[1px] bg-[#3C278D] w-full my-6"></div>
-            <p className="text-gray-500 text-center cursor-pointer mb-10">© 2023 Copyright company name. All Rights Reserved.
-            </p>
-        </footer>
+        </div>
+        <div className='h-[1px] bg-[#3C278D] w-full mt-10 mb-2'></div>
+        <p className='text-[#4D4D4D] text-center max-lg:mb-12'>© 2024 Copyright company name. All
+            Right Reserved.
+        </p>
+    </div>
     )
 }

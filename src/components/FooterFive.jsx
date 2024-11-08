@@ -1,31 +1,51 @@
-import React from 'react'
-import FooterFivelogo from '../assets/image/svg/cointips-logo.svg'
-import FooterFiveYoutube from '../assets/image/svg/footer-5-youtube.svg'
-import FooterFiveTwitter from '../assets/image/svg/footer-5-twitter.svg'
-const FooterFive = () => {
+import React from 'react';
+import FooterFiveLogo from '../assets/image/svg/cointips-logo.svg'
+
+const FooterThird = () => {
   return (
-    <footer className="min-h-screen max-w-[1920px] mx-auto flex items-center justify-center flex-col bg-cover">
-    <div className="bg-[#151619] rounded-2xl w-full">
-        <div className="container mx-auto px-3 py-5 max-w-7xl">
-            <div className="flex flex-wrap">
-                <div className="xl:w-4/12 lg:w-6/12  mx-auto">
-                    <a href="/"><img className="mb-2" src={FooterFivelogo} alt="logo"/></a>
-                    <p className="text-[#A0A6B0] max-sm:text-center">© 2024 Cointips LLC. Tous droits réservés.</p>
+    <footer className='min-h-screen max-w-[1920px] mx-auto flex items-center justify-center flex-col bg-cover'>
+    <div className='bg-[#151619] rounded-2xl w-full'>
+        <div className='container max-w-[1320px] mx-auto px-3 py-10'>
+            <div className='flex flex-wrap'>
+                <div
+                    className='xl:w-4/12 lg:w-6/12 w-full pl-0 lg:text-left text-center flex flex-col lg:items-start items-center xl:pr-3'>
+                    <a href='#footer'><img className='mb-2 max-lg:mx-auto' src={FooterFiveLogo}
+                            alt='logo'/></a>
+                    <p className='text-[#A0A6B0] max-sm:text-center max-w-[356px]'>© 2024 Cointips LLC. Tous droits
+                        réservés.</p>
                 </div>
-                <div className="xl:w-6/12 lg:w-6/12 md:w-8/12 w-full flex items-center max-lg:mt-10">
-                    <div className="flex flex-wrap gap-8 mx-auto">
-                        <p className="text-[#A0A6B0] max-md:text-center common-hover-5 cursor-pointer transition-all duration-300">CGV</p>
-                        <p className="text-[#A0A6B0] max-md:text-center common-hover-5 cursor-pointer transition-all duration-300">Politique de confidentialité</p>
-                        <p className="text-[#A0A6B0] max-md:text-center common-hover-5 cursor-pointer transition-all duration-300">Mentions légales</p>
+                <div className='xl:w-6/12 lg:w-6/12 w-full flex items-center justify-center max-lg:mt-[18px] px-3'>
+                    <div className='flex flex-wrap gap-[24px] mx-auto xl:mt-0 mt-[7px] max-lg:justify-center'>
+                        <a href='#footer'
+                            className='text-[#A0A6B0] max-md:text-center hover:text-white cursor-pointer transition-all duration-300'>
+                            CGV</a>
+                        <a href='#footer'
+                            className='text-[#A0A6B0] max-md:text-center hover:text-white cursor-pointer transition-all duration-300'>
+                            Politique de confidentialité</a>
+                        <a href='#footer'
+                            className='text-[#A0A6B0] max-md:text-center hover:text-white cursor-pointer transition-all duration-300'>
+                            Mentions légales</a>
                     </div>
                 </div>
-                <div className="xl:w-2/12 lg:w-full md:w-4/12 w-full flex items-center max-lg:mt-10">
-                    <div className="flex mx-auto max-w-[200px]">
-                        <a className='hover:scale-[1.2] transition-all duration-300' href="https://www.youtube.com/"target="_blank">
-                            <img src={FooterFiveYoutube} alt="YouTube" className="pr-4"/>
+                <div className='xl:w-2/12 w-full flex items-center pr-0 justify-center px-3'>
+                    <div className='flex xl:mt-0 mt-4 xl:ml-2 items-center justify-center'>
+                        <a className='mr-5' href='https://www.youtube.com/' target='_blank'>
+                            <svg className='icon-hover' width='35' height='35' viewBox='0 0 34 35' fill='none'
+                                xmlns='http://www.w3.org/2000/svg'>
+                                <rect x='0.5' y='0.74707' width='33' height='33' rx='16.5' stroke='white' />
+                                <path
+                                    d='M26.8409 14.0006C26.7188 12.8096 26.4539 11.4944 25.4802 10.8023C24.7249 10.2659 23.7333 10.2462 22.8077 10.2471C20.8504 10.2489 18.8931 10.2507 16.9358 10.2525C15.0534 10.2542 13.171 10.256 11.2886 10.2578C10.5021 10.2578 9.73787 10.197 9.00756 10.5377C8.37979 10.8309 7.88936 11.388 7.5951 12.0076C7.18491 12.8704 7.0984 13.8468 7.04936 14.8008C6.9584 16.5372 6.96822 18.2789 7.0779 20.0135C7.15726 21.2804 7.35967 22.6797 8.33609 23.4871C9.20195 24.2024 10.4236 24.2372 11.5454 24.2381C15.1087 24.2408 18.672 24.2435 22.2352 24.2471C22.6918 24.2471 23.1689 24.239 23.6343 24.1881C24.551 24.0888 25.424 23.8259 26.0125 23.1455C26.6064 22.4597 26.7589 21.5039 26.8499 20.6C27.0692 18.4076 27.0665 16.192 26.8409 14.0006ZM14.875 20.3219V14.1722L20.187 17.2471L14.875 20.3219Z'
+                                    fill='white' />
+                            </svg>
                         </a>
-                        <a className='hover:scale-[1.2] transition-all duration-300' href="https://x.com/home?lang=en"target="_blank">
-                            <img src={FooterFiveTwitter} alt="Twitter"/>
+                        <a href='https://x.com/home?lang=en' target='_blank'>
+                            <svg className='icon-hover ' width='34' height='35' viewBox='0 0 34 35' fill='none'
+                                xmlns='http://www.w3.org/2000/svg'>
+                                <rect x='0.5' y='0.74707' width='33' height='33' rx='16.5' stroke='white' />
+                                <path
+                                    d='M20.8597 11.1807H22.9178L18.4214 16.32L23.7112 23.3132H19.5692L16.3252 19.0718L12.6133 23.3132H10.5538L15.3632 17.8163L10.2888 11.1807H14.5357L17.4681 15.0574L20.8597 11.1807ZM20.1373 22.0813H21.2778L13.9161 12.348H12.6923L20.1373 22.0813Z'
+                                    fill='white' />
+                            </svg>
                         </a>
                     </div>
                 </div>
@@ -33,7 +53,7 @@ const FooterFive = () => {
         </div>
     </div>
 </footer>
-  )
-}
+  );
+};
 
-export default FooterFive
+export default FooterThird;

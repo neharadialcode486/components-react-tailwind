@@ -1,94 +1,147 @@
 import React from 'react'
 import FooterLogo from '../assets/image/svg/footer-2-logo.svg'
-import FacebookIconSecond from '../assets/image/svg/footer-2-fb-icon.svg'
-import FooterSecondTwitter from '../assets/image/svg/footer-2-twitter-icon.svg'
-import FooterSecondLinkedin from '../assets/image/svg/footer-2-linkedin-icon.svg'
-import InstaIconSecond from '../assets/image/svg/footer-2-insta-icon.svg'
-import EmailIcon from '../assets/image/svg/email-icon.svg'
-
 export const FooterSecond = () => {
-  return (
-    <footer class="min-h-screen max-w-[1920px] mx-auto  bg-[#1E1E1E] flex items-center justify-center flex-col py-10">
-    <div class="container mx-auto max-w-[1140px] px-4">
-        <div class="flex flex-wrap justify-between">
-            <div class="xl:w-5/12 md:w-6/12 w-full text-center md:text-left">
-                <div class="mb-4 max-w-[308px] md:mx-0 mx-auto">
-                    <a href="/"><img src={FooterLogo} alt="footer-logo"/></a>
+    return (
+        <div id='footer' className='min-h-screen bg-[#1E1E1E] flex items-center justify-center flex-col max-md:pt-8 max-md:pb-8'>
+        <div className='container max-w-[1140px] mx-auto px-3 max-xl:px-3'>
+            <div className='flex flex-wrap justify-between'>
+                <div
+                    className='lg:w-5/12 md:w-6/12 w-full text-center max-md:text-left md:text-left lg:px-3 lg:pr-0 sm:pr-3   lg:pl-0'>
+                    <div className='mb-6 max-w-[308px] md:mx-0'>
+                        <a href='#footer'><img src={FooterLogo} alt='footer-logo'/></a>
+                    </div>
+                    <p className='flex text-[#BBBBBB] mb-5 md:mb-10 max-w-[380px] md:mx-0'>Lorem ipsum dolor sit amet
+                        consectetur. Interdum
+                        est
+                        donec lacus vitae
+                        elit dictum eros cras sagittis. Ac in sem mi ipsum urna</p>
+                    <div className='flex justify-center max-md:justify-start md:justify-start gap-4'>
+                        <a href='https://www.facebook.com/' target='_blank'>
+                            <svg className='icon-hover-2' width='30' height='30' viewBox='0 0 30 30' fill='none'
+                                xmlns='http://www.w3.org/2000/svg'>
+                                <rect width='30' height='30' rx='15' fill='#F7B103' />
+                                <path
+                                    d='M16.6667 16.05H18.3333L19 13.25H16.6667V11.85C16.6667 11.129 16.6667 10.45 18 10.45H19V8.098C18.7827 8.0679 17.962 8 17.0953 8C15.2853 8 14 9.1599 14 11.29V13.25H12V16.05H14V22H16.6667V16.05Z'
+                                    fill='black' />
+                            </svg>
+                        </a>
+                        <a href='https://www.twitter.com/' target='_blank'>
+                            <svg className='icon-hover-2' width='30' height='30' viewBox='0 0 30 30' fill='none'
+                                xmlns='http://www.w3.org/2000/svg'>
+                                <rect width='30' height='30' rx='15' fill='#F7B103' />
+                                <path
+                                    d='M12.8182 9H9L13.5055 15.6084L9.24545 21H10.6909L14.1753 16.5906L17.1818 21H21L16.3047 14.1132L20.3455 9H18.9L15.6349 13.1316L12.8182 9ZM17.7273 19.8L11.1818 10.2H12.2727L18.8182 19.8H17.7273Z'
+                                    fill='black' />
+                            </svg>
+                        </a>
+                        <a href='https://www.linkedin.com/' target='_blank'>
+                            <svg className='icon-hover-2' width='30' height='30' viewBox='0 0 30 30' fill='none'
+                                xmlns='http://www.w3.org/2000/svg'>
+                                <rect width='30' height='30' rx='15' fill='#F7B103' />
+                                <path
+                                    d='M10.9381 10.3339C10.9379 10.6875 10.7829 11.0266 10.5073 11.2765C10.2317 11.5264 9.85793 11.6667 9.46831 11.6665C9.0787 11.6663 8.70512 11.5257 8.42975 11.2755C8.15439 11.0254 7.99981 10.6862 8 10.3326C8.00019 9.97899 8.15516 9.63994 8.43079 9.39003C8.70643 9.14012 9.08016 8.99982 9.46978 9C9.85939 9.00018 10.233 9.14081 10.5083 9.39097C10.7837 9.64113 10.9383 9.98032 10.9381 10.3339ZM10.9822 12.6538H8.04407V21H10.9822V12.6538ZM15.6243 12.6538H12.7009V21H15.595V16.6202C15.595 14.1804 19.0986 13.9537 19.0986 16.6202V21H22V15.7136C22 11.6005 16.8143 11.7538 15.595 13.7737L15.6243 12.6538Z'
+                                    fill='black' />
+                            </svg>
+                        </a>
+                        <a href='https://www.instagram.com/' target='_blank'>
+                            <svg className='icon-hover-2' width='30' height='30' viewBox='0 0 30 30' fill='none'
+                                xmlns='http://www.w3.org/2000/svg'>
+                                <rect width='30' height='30' rx='15' fill='#F7B103'/>
+                                <path
+                                    d='M15.6168 9C16.2918 9.0018 16.6344 9.0054 16.9301 9.0138L17.0465 9.018C17.1809 9.0228 17.3135 9.0288 17.4737 9.036C18.1121 9.066 18.5477 9.1668 18.9298 9.31499C19.3258 9.46739 19.6594 9.67378 19.993 10.0068C20.2981 10.3067 20.5341 10.6695 20.6847 11.07C20.8329 11.4521 20.9337 11.8877 20.9637 12.5267C20.9709 12.6863 20.9769 12.8189 20.9817 12.9539L20.9853 13.0703C20.9943 13.3655 20.9979 13.7081 20.9991 14.3831L20.9997 14.8307V15.6166C21.0012 16.0543 20.9966 16.4919 20.9859 16.9294L20.9823 17.0458C20.9775 17.1808 20.9715 17.3134 20.9643 17.473C20.9343 18.112 20.8323 18.547 20.6847 18.9298C20.5346 19.3304 20.2984 19.6933 19.993 19.9929C19.693 20.2979 19.3302 20.534 18.9298 20.6847C18.5477 20.8329 18.1121 20.9337 17.4737 20.9637C17.3313 20.9704 17.189 20.9764 17.0465 20.9817L16.9301 20.9853C16.6344 20.9937 16.2918 20.9979 15.6168 20.9991L15.1692 20.9997H14.3839C13.946 21.0012 13.5082 20.9966 13.0705 20.9859L12.9541 20.9823C12.8117 20.9769 12.6693 20.9707 12.527 20.9637C11.8886 20.9337 11.453 20.8329 11.0702 20.6847C10.6699 20.5344 10.3072 20.2982 10.0077 19.9929C9.70234 19.6931 9.46606 19.3303 9.31533 18.9298C9.16714 18.5476 9.06634 18.112 9.03634 17.473C9.02966 17.3306 9.02366 17.1882 9.01835 17.0458L9.01535 16.9294C9.00429 16.4919 8.99929 16.0543 9.00035 15.6166V14.3831C8.99867 13.9454 9.00307 13.5078 9.01355 13.0703L9.01775 12.9539C9.02255 12.8189 9.02854 12.6863 9.03574 12.5267C9.06574 11.8877 9.16654 11.4527 9.31473 11.07C9.46539 10.6691 9.70214 10.3062 10.0083 10.0068C10.3077 9.70167 10.6701 9.46558 11.0702 9.31499C11.453 9.1668 11.888 9.066 12.527 9.036C12.6866 9.0288 12.8198 9.0228 12.9541 9.018L13.0705 9.0144C13.508 9.00374 13.9457 8.99914 14.3833 9.0006L15.6168 9ZM15 11.9999C14.2044 11.9999 13.4414 12.316 12.8788 12.8786C12.3162 13.4412 12.0002 14.2042 12.0002 14.9999C12.0002 15.7955 12.3162 16.5585 12.8788 17.1211C13.4414 17.6837 14.2044 17.9998 15 17.9998C15.7956 17.9998 16.5587 17.6837 17.1213 17.1211C17.6838 16.5585 17.9999 15.7955 17.9999 14.9999C17.9999 14.2042 17.6838 13.4412 17.1213 12.8786C16.5587 12.316 15.7956 11.9999 15 11.9999ZM15 13.1999C15.2364 13.1999 15.4705 13.2464 15.6889 13.3368C15.9072 13.4272 16.1057 13.5598 16.2729 13.7269C16.44 13.894 16.5726 14.0924 16.6631 14.3108C16.7536 14.5291 16.8002 14.7632 16.8002 14.9996C16.8003 15.2359 16.7538 15.47 16.6634 15.6884C16.5729 15.9068 16.4404 16.1052 16.2733 16.2724C16.1062 16.4396 15.9078 16.5722 15.6894 16.6627C15.4711 16.7532 15.237 16.7998 15.0006 16.7998C14.5233 16.7998 14.0655 16.6102 13.7279 16.2726C13.3904 15.9351 13.2007 15.4772 13.2007 14.9999C13.2007 14.5225 13.3904 14.0647 13.7279 13.7271C14.0655 13.3895 14.5227 13.1999 15 13.1999ZM18.1505 11.1C17.9516 11.1 17.7608 11.179 17.6202 11.3196C17.4795 11.4603 17.4005 11.651 17.4005 11.8499C17.4005 12.0488 17.4795 12.2396 17.6202 12.3803C17.7608 12.5209 17.9516 12.5999 18.1505 12.5999C18.3494 12.5999 18.5401 12.5209 18.6808 12.3803C18.8214 12.2396 18.9004 12.0488 18.9004 11.8499C18.9004 11.651 18.8214 11.4603 18.6808 11.3196C18.5401 11.179 18.3494 11.1 18.1505 11.1Z'
+                                    fill='black' />
+                            </svg>
+                        </a>
+                    </div>
                 </div>
-                <p class=" flex text-gray-400 mb-6 max-w-[380px] md:mx-0 mx-auto">Lorem ipsum dolor sit amet
-                    consectetur. Interdum
-                    est
-                    donec lacus vitae
-                    elit dictum eros cras sagittis. Ac in sem mi ipsum urna</p>
-                <div class="flex justify-center md:justify-start gap-[18px]">
-                    <a className='hover:scale-[1.2] transition-all duration-300' href="https://www.facebook.com/" target="_blank">
-                        <img src={FacebookIconSecond} alt="facebook-icon"/>
-                    </a>
-                    <a className='hover:scale-[1.2] transition-all duration-300' href="https://www.twitter.com/" target="_blank">
-                        <img src={FooterSecondTwitter} alt="twitter-icon"/>
-                    </a>
-                    <a className='hover:scale-[1.2] transition-all duration-300' href="https://www.linkedin.com/" target="_blank">
-                        <img src={FooterSecondLinkedin} alt="linkedin-icon"/>
-                    </a>
-                    <a className='hover:scale-[1.2] transition-all duration-300' href="https://www.instagram.com/" target="_blank">
-                        <img src={InstaIconSecond} alt="instagram-icon"/>
-                    </a>
+                <div
+                    className='lg:w-3/12 sm:w-4/12 w-full max-md:text-left text-center md:text-left mt-6 md:mt-0 sm:pl-3 lg:pr-3'>
+                    <p className='text-white text-2xl font-semibold mb-3 leading-[36px]'>Service</p>
+                    <ul className='flex flex-col list-none'>
+                        <li className=' mb-3'><a href='#footer'
+                                className='hover:text-[#F7B103] text-[#BBBBBB] cursor-pointer'>Hero</a></li>
+                        <li className=' mb-3'><a href='#footer' className='hover:text-[#F7B103] text-[#BBBBBB] cursor-pointer'>Why
+                                DatingStars</a></li>
+                        <li className=' mb-3'><a href='#footer' className='hover:text-[#F7B103] text-[#BBBBBB] cursor-pointer'>Meet
+                                DatingStars Talk</a></li>
+                        <li className=' mb-3'><a href='#footer' className='hover:text-[#F7B103] text-[#BBBBBB] cursor-pointer'>Contact
+                                Us</a></li>
+                        <li className=' mb-2'><a href='#footer'
+                                className='hover:text-[#F7B103] text-[#BBBBBB] cursor-pointer'>Testimonial</a></li>
+                    </ul>
+                </div>
+                <div className='lg:w-4/12 md:w-full sm:w-6/12 w-full text-left lg:text-left mt-12 lg:mt-0 lg:px-3 lg:pr-0'>
+                    <p className='text-white text-2xl font-semibold mb-3 leading-[150%]'>Join a Newsletter</p>
+                    <p className=' text-[#BBBBBB] mb-3 '>Your Email</p>
+                    <div className=''>
+                        <form>
+                            <div className='flex flex-col md:flex-row max-md:items-start items-center'>
+                                <div className='w-[255px]'>
+                                    <div className='w-full px-[18px] pe-[27px] py-3  bg-[#FEF7E6] rounded-xl mb-4 md:mb-0'>
+                                        <input type='email' name='Email' placeholder='Enter Your Email'
+                                            className=' w-full placeholder:text-[#77808B] bg-transparent outline-none'
+                                            required/>
+                                    </div>
+                                </div>
+                                <button type='submit'
+                                    className='py-2.5 px-5 bg-[#F7B103]  hover:bg-white hover:text-[#F7B103] border-2 border-transparent hover:border-[#F7B103] transition-all duration-300 rounded-xl ml-0 md:-ml-[20px] transitions font-semibold'>
+                                    Subscribe
+                                </button>
+                            </div>
+                        </form>
+                    </div>
                 </div>
             </div>
-            <div class="xl:w-3/12 sm:w-4/12 w-full text-center md:text-left mt-10 md:mt-0">
-                <p class="text-white text-lg font-semibold mb-4">Service</p>
-                <div>
-                    <p class="hover:text-[#F7B103] text-[#BBBBBB] cursor-pointer mb-2">Hero</p>
-                    <p class="hover:text-[#F7B103] text-[#BBBBBB] cursor-pointer mb-2">Why DatingStars</p>
-                    <p class="hover:text-[#F7B103] text-[#BBBBBB] cursor-pointer mb-2">Meet DatingStars Talk</p>
-                    <p class="hover:text-[#F7B103] text-[#BBBBBB] cursor-pointer mb-2">Contact Us</p>
-                    <p class="hover:text-[#F7B103] text-[#BBBBBB] cursor-pointer mb-2">Testimonial</p>
+            <div className='w-full h-px bg-[#4B4B4B] my-[32px]'></div>
+            <div className='flex flex-wrap justify-end'>
+                <div className='xl:w-1/3 mb-0 text-left pr-3 xl:block hidden'>
+                    <p className='text-[#BBBBBB]'>© 2024 DatingStars. All rights Reserved</p>
+                </div>
+                <div className='xl:w-2/3 w-full'>
+                    <div className='flex-wrap xl:justify-end justify-center flex items-center'>
+                        <div className='md:w-1/3 sm:px-3 w-full max-md:text-left text-center mb-2.5 md:mb-0'>
+                            <a href='/'
+                                className='text-[#BBBBBB] hover:text-yellow-400 inline-flex items-center max-xl:pr-3'>
+                                <svg className='mr-2' width='24' height='24' viewBox='0 0 24 24' fill='none'
+                                    xmlns='http://www.w3.org/2000/svg'>
+                                    <path fill-rule='evenodd' clip-rule='evenodd'
+                                        d='M12 2C15.87 2 19 5.13 19 9C19 14.25 12 22 12 22C12 22 5 14.25 5 9C5 5.13 8.13 2 12 2ZM7 9C7 11.85 9.92 16.21 12 18.88C14.12 16.19 17 11.88 17 9C17 6.24 14.76 4 12 4C9.24 4 7 6.24 7 9ZM12 11.5C10.6193 11.5 9.5 10.3807 9.5 9C9.5 7.61929 10.6193 6.5 12 6.5C13.3807 6.5 14.5 7.61929 14.5 9C14.5 10.3807 13.3807 11.5 12 11.5Z'
+                                        fill='#F7B103' />
+                                </svg>
+                                8819 Ohio St. South Gate
+                            </a>
+                        </div>
+                        <div className='md:w-1/3 w-full text-center max-md:text-left mb-2.5 md:mb-0 sm:px-2 '>
+                            <a href='mailto:webmaster@example.com'
+                                className='text-[#BBBBBB] hover:text-yellow-400 inline-flex items-center'>
+                                <svg className='me-2' width='30' height='30' viewBox='0 0 30 30' fill='none'
+                                    xmlns='http://www.w3.org/2000/svg'>
+                                    <path
+                                        d='M5 25C4.3125 25 3.72417 24.7554 3.235 24.2662C2.74583 23.7771 2.50083 23.1883 2.5 22.5V7.5C2.5 6.8125 2.745 6.22417 3.235 5.735C3.725 5.24583 4.31333 5.00083 5 5H25C25.6875 5 26.2763 5.245 26.7663 5.735C27.2563 6.225 27.5008 6.81333 27.5 7.5V22.5C27.5 23.1875 27.2554 23.7762 26.7663 24.2662C26.2771 24.7562 25.6883 25.0008 25 25H5ZM15 16.25L5 10V22.5H25V10L15 16.25ZM15 13.75L25 7.5H5L15 13.75ZM5 10V7.5V22.5V10Z'
+                                        fill='#F7B103' />
+                                </svg>
+                                support@datingstars.com
+                            </a>
+                        </div>
+                        <div className='md:w-1/4 w-full xl:text-end md:text-center text-left sm:pl-3'>
+                            <a href='tel:+1386-688-3295'
+                                className='text-[#BBBBBB] hover:text-yellow-400 inline-flex items-center'>
+                                <svg className='' width='24' height='24' viewBox='0 0 24 24' fill='none'
+                                    xmlns='http://www.w3.org/2000/svg'>
+                                    <path fill-rule='evenodd' clip-rule='evenodd'
+                                        d='M6.54 5C6.6 5.89 6.75 6.76 6.99 7.59L5.79 8.79C5.38 7.59 5.12 6.32 5.03 5H6.54ZM16.4 17.02C17.25 17.26 18.12 17.41 19 17.47V18.96C17.68 18.87 16.41 18.61 15.2 18.21L16.4 17.02ZM7.5 3H4C3.45 3 3 3.45 3 4C3 13.39 10.61 21 20 21C20.55 21 21 20.55 21 20V16.51C21 15.96 20.55 15.51 20 15.51C18.76 15.51 17.55 15.31 16.43 14.94C16.33 14.9 16.22 14.89 16.12 14.89C15.86 14.89 15.61 14.99 15.41 15.18L13.21 17.38C10.38 15.93 8.06 13.62 6.62 10.79L8.82 8.59C9.1 8.31 9.18 7.92 9.07 7.57C8.7 6.45 8.5 5.25 8.5 4C8.5 3.45 8.05 3 7.5 3Z'
+                                        fill='#F7B103' />
+                                </svg>
+                                +1 386-688-3295
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="xl:w-4/12 md:w-full sm:w-6/12 w-full text-center xl:text-left mt-10 xl:mt-0">
-                <p class="text-white text-lg font-semibold mb-4">Join a Newsletter</p>
-                <p class="hover:text-[#F7B103] text-[#BBBBBB] cursor-pointer mb-6 ">Your Email</p>
-                <div class="flex flex-col md:flex-row items-center max-w-[365px] xl:mx-0 mx-auto">
-                    <form class="w-full">
-                        <input type="email" placeholder="Enter Your Email"
-                            class="w-full px-3.5 pt-3.5 placeholder:text-[#77808B] pb-2.5 bg-[#FEF7E6] rounded-md mb-4 md:mb-0 outline-none "/>
-                    </form>
-                    <button
-                        class="py-2.5  px-5 bg-[#F7B103]  hover:bg-white hover:text-[#F7B103] border-2 border-transparent hover:border-[#F7B103] transition-all duration-300 rounded-xl ml-0 md:-ml-4 transitions font-semibold">
-                        Subscribe
-                    </button>
-                </div>
-            </div>
-        </div>
-        <div class="w-full h-px bg-[#4B4B4B] my-8"></div>
-        <div class="grid grid-cols-1 xl:grid-cols-3 gap-4 text-center xl:text-left">
-            <p class="text-gray-400">© 2024 DatingStars. All rights Reserved</p>
-            <div class="text-gray-400 flex justify-center items-center xl:justify-center space-x-2">
-                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path fill-rule="evenodd" clip-rule="evenodd"
-                        d="M12 2C15.87 2 19 5.13 19 9C19 14.25 12 22 12 22C12 22 5 14.25 5 9C5 5.13 8.13 2 12 2ZM7 9C7 11.85 9.92 16.21 12 18.88C14.12 16.19 17 11.88 17 9C17 6.24 14.76 4 12 4C9.24 4 7 6.24 7 9ZM12 11.5C10.6193 11.5 9.5 10.3807 9.5 9C9.5 7.61929 10.6193 6.5 12 6.5C13.3807 6.5 14.5 7.61929 14.5 9C14.5 10.3807 13.3807 11.5 12 11.5Z"
-                        fill="#F7B103" />
-                </svg>
-                <a href="/" class="hover:text-yellow-400">8819 Ohio St. South Gate</a>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <a href="mailto:support@datingstars.com"
-                    class="text-gray-400 -ml-10 hover:text-yellow-400 flex items-center justify-center xl:justify-start">
-                    <img src={EmailIcon} alt="email"/>
-                    support@datingstars.com
-                </a>
-                <a href="tel:+1 386-688-3295"
-                    class="text-gray-400 hover:text-yellow-400 flex max-xl:justify-center">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M6.54 5C6.6 5.89 6.75 6.76 6.99 7.59L5.79 8.79C5.38 7.59 5.12 6.32 5.03 5H6.54ZM16.4 17.02C17.25 17.26 18.12 17.41 19 17.47V18.96C17.68 18.87 16.41 18.61 15.2 18.21L16.4 17.02ZM7.5 3H4.5C3.67 3 3 3.67 3 4.5C3 12.61 10.39 20 18.5 20C19.33 20 20 19.33 20 18.5V15.5C20 14.67 19.33 14 18.5 14C17.57 14 16.68 13.84 15.86 13.54C15.28 13.31 14.6 13.45 14.14 13.91L12.71 15.34C10.19 14.13 8.19 12.13 6.98 9.61L8.41 8.18C8.87 7.72 9.01 7.04 8.79 6.46C8.49 5.65 8.33 4.77 8.33 3.83C8.33 3.37 7.96 3 7.5 3Z"
-                            fill="#F7B103" />
-                    </svg>
-                    +1 386-688-3295
-                </a>
+            <div className=' md:text-center  block xl:hidden'>
+                <p className='text-[#BBBBBB] mb-0 mt-[9px]'>© 2024 DatingStars. All rights Reserved</p>
             </div>
         </div>
     </div>
-</footer>
-  )
+    )
 }
