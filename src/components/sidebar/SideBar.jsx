@@ -41,7 +41,7 @@ const SideBar = () => {
                         ))}
                         <a href="/" className='flex items-center gap-2 font-semibold text-sm duration-300 ease-linear group hover:scale-105 mt-12 w-fit mb-5 md:mb-14'>More events <Icon className='duration-300 ease-linear group-hover:scale-90' iconName='rightArrowIcon' /></a>
                     </div>
-                    <div className={`rounded-lg w-full xl:w-[41.3%] bg-white p-3 lg:p-8 ${activeTab === 1 || activeTab === 2 ? "hidden" : activeTab === 3 ? "xl:!w-[50%]" : ""}`}>
+                    <div className={`rounded-lg w-full xl:w-[41.3%] bg-white p-3 lg:p-8 ${activeTab === 1 || activeTab === 2 ? "hidden" : ""}`}>
                         <h2 className='font-bold text-2xl mb-4 lg:mb-9'>Your programmes</h2>
                         {[...Array(2)].map((_, index) => (
                             <div key={index} className="border border-dark-gray rounded-lg py-8 px-6 mt-4 relative overflow-hidden">
@@ -71,7 +71,7 @@ const SideBar = () => {
                 </div>
                 <DataSwiper className={activeTab === 1 || activeTab === 3 ? "hidden" : activeTab === 2 ? "xl:mt-20 xl:pt-14" : ""} />
             </div>
-            {open && <div onClick={() => setOpen(!open)} className='bg-black opacity-70 z-30 fixed left-0 top-0 min-h-screen w-full'></div>}
+            {open && <div onClick={() => setOpen(!open)} className='bg-black opacity-70 z-30 fixed left-0 top-0 min-h-screen w-full sm:hidden'></div>}
         </div>
     )
 }
